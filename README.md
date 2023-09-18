@@ -31,7 +31,7 @@
   <li>Task here!!</li>
 </ul>
 <p>For more details, You can find the full problem description on CodeChef's website:
-<a href="link here">name Problem Description</a>.</p>
+<a href="link here">Water Consumption Problem Description</a>.</p>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/01_watercons.cpp"><code>C++</code></a></li>
