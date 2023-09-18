@@ -41,7 +41,7 @@
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 <pre>
   <code>
-    T = int(input())
+T = int(input())
 for _ in range(T):
     X = int(input())
     if X >= 2000:
