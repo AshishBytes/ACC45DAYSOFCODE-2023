@@ -50,7 +50,7 @@ for _ in range(T):
         print("NO")
   </code>
 </pre>
-<img src="day01_image.jpg" alt="Day 01 Image">
+<img src="assets/day01_image.jpg" alt="Day 01 Image">
 </ol>
 </details>
 
