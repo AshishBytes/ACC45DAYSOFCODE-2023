@@ -152,6 +152,107 @@ func main() {
 </details>
 
 <!--Day - 03-->
+<details><summary>Day-03</summary><ol>
+<p>This is the content for Day 03.</p>
+<h2>Tasks for Day 03:</h2>
+<ul>
+  <li>
+    <strong>Problem</strong>
+    <p>Chef's coding class is very famous in Chefland. This year X students joined his class, and each student will require one chair to sit on. Chef already has Y chairs in his class. Determine the minimum number of new chairs Chef must buy so that every student is able to get one chair to sit on.</p>
+  </li>
+  <li>
+    <strong>Input Format</strong>
+    <p>The first line contains a single integer T — the number of test cases. Then the test cases follow.</p>
+    <p>The first and only line of each test case contains two integers X and Y — the number of students in the class and the number of chairs Chef already has.</p>
+  </li>
+  <li>
+    <strong>Output Format</strong>
+    <p>For each test case, output the minimum number of extra chairs Chef must buy so that every student gets one chair.</p>
+  </li>
+  <li>
+    <strong>Constraints</strong>
+    <p>1 ≤ T ≤ 1000</p>
+    <p>0 ≤ X, Y ≤ 100</p>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <ul>
+      <li>
+        <strong>Input</strong>
+        <p>4</p>
+        <p>20 14</p>
+        <p>41 41</p>
+        <p>35 0</p>
+        <p>50 100</p>
+      </li>
+      <li>
+        <strong>Output</strong>
+        <p>6</p>
+        <p>0</p>
+        <p>35</p>
+        <p>0</p>
+      </li>
+      <li>
+        <strong>Explanation</strong>
+        <p>Test case 1: There are 20 students in the class, and Chef has 14 chairs already. Therefore Chef must buy 6 more chairs.</p>
+        <p>Test case 2: There are 41 students in the class, and Chef already has exactly 41 chairs. Therefore Chef does not need to buy any more chairs.</p>
+        <p>Test case 3: There are 35 students in the class, and Chef has no chairs initially. Therefore Chef must buy 35 chairs.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CHAIRS_">Chairs Requirement Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/03_chair_distribution.cpp"><code>C++</code></a></li>
+<li><a href="Python/03_chair_distribution.py"><code>Python</code></a></li>
+<li><a href="JavaScript/03_chair_distribution.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/03_chair_distribution.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>JavaScript</code> programming language:</p>
+<pre>
+  <code>
+  const readline = require('readline');
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+let T;
+let testCases = [];
+
+rl.question('', (t) => {
+    T = parseInt(t);
+    readInput();
+});
+
+function readInput() {
+    if (testCases.length < T) {
+        rl.question('', (input) => {
+            const [X, Y] = input.split(' ').map(Number);
+            testCases.push({ X, Y });
+            readInput();
+        });
+    } else {
+        processInput();
+    }
+}
+
+function processInput() {
+    for (let i = 0; i < T; i++) {
+        const { X, Y } = testCases[i];
+        const extraChairs = Math.max(0, X - Y);
+        console.log(extraChairs);
+    }
+    rl.close();
+}
+  </code>
+</pre>
+<img src="assets/day03_image.jpg" alt="Day 01 Image">
+</ol>
+</details>
+
 <!--Day - 04-->
 <!--Day - 05-->
 <!--Day - 06-->
