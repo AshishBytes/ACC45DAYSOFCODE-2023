@@ -249,7 +249,7 @@ function processInput() {
 }
   </code>
 </pre>
-<img src="assets/day03_image.jpg" alt="Day 01 Image">
+<img src="assets/day03_image.jpg" alt="Day 03 Image">
 </ol>
 </details>
 
