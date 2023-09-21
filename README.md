@@ -318,7 +318,7 @@ function processInput() {
 <li><a href="Python/04_candy_store_beginner.py"><code>Python</code></a></li>
 <li><a href="JavaScript/04_candy_store_beginner.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/04_candy_store_beginner.go"><code>Golang</code></a></li>
-<p>Here's an example of using the <code>c++</code> programming language:</p>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
 <pre>
   <code>
 #include <iostream>
@@ -358,8 +358,8 @@ int main() {
 <h2>Solution/Codes</h2>
 <li><a href="C++/04_MindfulRace_Intermediate.cpp"><code>C++</code></a></li>
 <li><a href="Python/04_MindfulRace_Intermediate.py"><code>Python</code></a></li>
-<li><a href="JavaScript/04_MindfulRace_Intermediate.js"><code>:x: JavaScript</code></a></li>
-<li><a href="Golang/04_MindfulRace_Intermediate.go"><code>:x: Golang</code></a></li>
+<li><a href="JavaScript/04_MindfulRace_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/04_MindfulRace_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
 <pre>
   <code>
