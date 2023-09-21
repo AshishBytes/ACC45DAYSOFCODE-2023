@@ -255,7 +255,7 @@ function processInput() {
 
 <!--Day - 04-->
 <!--Beginner-->
-<details><summary>Day-04</summary><ol>
+<details><summary>Day-04 - Beginner</summary><ol>
 <p>This is the content for Day 04.</p>
 <h2>Tasks for Day 04 - Beginner:</h2>
 <ul>
@@ -318,10 +318,27 @@ function processInput() {
 <li><a href="Python/04_candy_store_beginner.py"><code>Python</code></a></li>
 <li><a href="JavaScript/04_candy_store_beginner.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/04_candy_store_beginner.go"><code>Golang</code></a></li>
-<p>Here's an example of using the <code>Python</code> programming language:</p>
+<p>Here's an example of using the <code>c++</code> programming language:</p>
 <pre>
   <code>
-    // Your code here
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y;
+        cin >> x >> y;
+        if (x >= y) {
+            cout << y;
+        } else {
+            cout << x + 2 * (y - x);
+        }
+        cout << endl;
+    }
+    return 0;
+}
   </code>
 </pre>
 <img src="assets/day04_image_beginner.jpg" alt="Day 04 Image Beginner">
@@ -329,7 +346,7 @@ function processInput() {
 </details>
 
 <!--Intermediate-->
-<details><summary>Day-04</summary><ol>
+<details><summary>Day-04 - Intermediate</summary><ol>
 <p>This is the content for Day 04 - Intermediate.</p>
 <h2>Tasks for Day 04:</h2>
 <ul>
@@ -341,15 +358,38 @@ function processInput() {
 <h2>Solution/Codes</h2>
 <li><a href="C++/04_MindfulRace_Intermediate.cpp"><code>C++</code></a></li>
 <li><a href="Python/04_MindfulRace_Intermediate.py"><code>Python</code></a></li>
-<li><a href="JavaScript/04_MindfulRace_Intermediate.js"><code>JavaScript</code></a></li>
-<li><a href="Golang/04_MindfulRace_Intermediate.go"><code>Golang</code></a></li>
-<p>Here's an example of using the <code>Python</code> programming language:</p>
+<li><a href="JavaScript/04_MindfulRace_Intermediate.js"><code>:x: JavaScript</code></a></li>
+<li><a href="Golang/04_MindfulRace_Intermediate.go"><code>:x: Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
 <pre>
   <code>
-    // Your code here
+#include <iostream>
+#include <math.h>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    int t;
+    float L, v1, v2;
+    cin >> t;
+    while (t--) {
+        cin >> L >> v1 >> v2;
+        setprecision(3);
+        int t1 = ceil(L / v1);
+        int t2 = ceil(L / v2);
+        if (t1 > t2) {
+            if (t1 == t2 + 1)
+                cout << "0" << endl;
+            else
+                cout << t1 - t2 - 1 << endl;
+        } else if (t1 == t2)
+            cout << "-1" << endl;
+    }
+    return 0;
+}
   </code>
 </pre>
-<img src="assets/day01_image_Intermediate.jpg" alt="Day 01 Image Intermediate">
+<img src="assets/day04_image_Intermediate.jpg" alt="Day 04 Image Intermediate">
 </ol>
 </details>
 <!--Day - 05-->
