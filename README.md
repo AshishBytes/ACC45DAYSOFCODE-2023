@@ -254,6 +254,104 @@ function processInput() {
 </details>
 
 <!--Day - 04-->
+<!--Beginner-->
+<details><summary>Day-04</summary><ol>
+<p>This is the content for Day 04.</p>
+<h2>Tasks for Day 04 - Beginner:</h2>
+<ul>
+  <li>Chef has started working at the candy store. The store has 100 chocolates in total.</li>
+  <li>Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate.</li>
+  <li>If Chef sells Y chocolates in a day, find the total amount he made.</li>
+  <li>
+    <code>Input Format</code>:
+    <ul>
+      <li>The first line of input will contain a single integer T, denoting the number of test cases.</li>
+      <li>Each test case consists of two space-separated integers X and Y — the daily goal of Chef and the number of chocolates he actually sells.</li>
+    </ul>
+  </li>
+  <li>
+    <code>Output Format</code>:
+    <ul>
+      <li>For each test case, output on a new line the total amount Chef made in a day.</li>
+    </ul>
+  </li>
+  <li>
+    <code>Constraints</code>:
+    <ul>
+      <li>1 ≤ T ≤ 100</li>
+      <li>1 ≤ X, Y ≤ 10</li>
+    </ul>
+  </li>
+  <li>
+    <code>Sample 1:</code>
+    <ul>
+      <li>
+        <code>Input</code>
+        <p>4</p>
+        <p>3 1</p>
+        <p>5 5</p>
+        <p>4 7</p>
+        <p>2 3</p>
+      </li>
+      <li>
+        <code>Output</code>
+        <p>1</p>
+        <p>5</p>
+        <p>10</p>
+        <p>4</p>
+      </li>
+      <li>
+        <code>Explanation</code>:
+        <p>Test case 1: Chef's daily goal was 3. Since he sold only 1 chocolate, he'll get only 1 rupee.</p>
+        <p>Test case 2: Chef's daily goal was 5. Since he sold 5 chocolates, he'll get 5 rupees.</p>
+        <p>Test case 3: Chef's daily goal was 4. Since he sold 7 chocolates, he'll get 4 rupees for the 4 chocolates as his daily goal and 2 rupees per chocolate for the extra 3 chocolates. The total amount he gets is 4 + 3 * 2 = 10.</p>
+        <p>Test case 4: Chef's daily goal was 2. Since he sold 3 chocolates, he'll get 2 rupees for the 2 chocolates as his daily goal and 2 rupees per chocolate for the extra 1 chocolate. The total amount he gets is 2 + 1 * 2 = 4.</p>
+      </li>
+    </ul>
+  </li>
+</ul>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/practice/PCBM01/problems/CANDYSTORE">Candy Store Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/04_candy_store_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/04_candy_store_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/04_candy_store_beginner.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/04_candy_store_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+    // Your code here
+  </code>
+</pre>
+<img src="assets/day04_image_beginner.jpg" alt="Day 04 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-04</summary><ol>
+<p>This is the content for Day 04 - Intermediate.</p>
+<h2>Tasks for Day 04:</h2>
+<ul>
+  <li>Task here!!</li>
+</ul>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/START101D/problems/SMARTER">Work Smarter, Not Harder Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/04_MindfulRace_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/04_MindfulRace_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/04_MindfulRace_Intermediate.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/04_MindfulRace_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+    // Your code here
+  </code>
+</pre>
+<img src="assets/day01_image_Intermediate.jpg" alt="Day 01 Image Intermediate">
+</ol>
+</details>
 <!--Day - 05-->
 <!--Day - 06-->
 <!--Day - 07-->
