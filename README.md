@@ -256,8 +256,7 @@ function processInput() {
 <!--Day - 04-->
 <!--Beginner-->
 <details><summary>Day-04 - Beginner</summary><ol>
-<p>This is the content for Day 04.</p>
-<h2>Tasks for Day 04 - Beginner:</h2>
+<p>Today's Beginner problem:</p>
 <ul>
   <li>Chef has started working at the candy store. The store has 100 chocolates in total.</li>
   <li>Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate.</li>
@@ -347,8 +346,7 @@ int main() {
 
 <!--Intermediate-->
 <details><summary>Day-04 - Intermediate</summary><ol>
-<p>This is the content for Day 04 - Intermediate.</p>
-<h2>Tasks for Day 04:</h2>
+<p>Today's Intermediate problem:</p>
 <ul>
   <li>Task here!!</li>
 </ul>
@@ -393,8 +391,492 @@ int main() {
 </ol>
 </details>
 <!--Day - 05-->
+<!--Day - 05-->
+<!--Beginner-->
+<details><summary>Day-05 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef's phone shows a Battery Low notification if the battery level is 15% or less.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line will contain T, the number of test cases.</li>
+      <li>Each test case contains a single line of input, an integer X, denoting the battery level of the phone.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output in a single line "Yes" if the battery level is 15% or below. Otherwise, print "No".</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 100</li>
+      <li>1 ≤ X ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      3
+      15
+      3
+      65
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      Yes
+      Yes
+      No
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: The battery level is 15%. Thus, it would show a battery low notification.</li>
+      <li>Test Case 2: The battery level is 3%, which is less than 15%. Thus, it would show a battery low notification.</li>
+      <li>Test Case 3: The battery level is 65%, which is greater than 15%. Thus, it would not show a battery low notification.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/BATTERYLOW">Battery Low Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/05_battery_low_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/05_battery_low_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/05_battery_low_beginner.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/05_battery_low_beginner.go"><code>Golang</code></a></li>
+
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+  t = int(input())
+for _ in range(t):
+    x = int(input())
+    if x <= 15:
+        print("Yes")
+    else:
+        print("No")
+  </code>
+</pre>
+<img src="assets/day05_image_beginner.jpg" alt="Day 05 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-05 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> You and your friend are playing a game with hoops. There are N hoops (where N is odd) in a row. You jump into hoop 1, and your friend jumps into hoop N. Then you jump into hoop 2, and after that, your friend jumps into hoop (N-1), and so on. The process ends when someone cannot make the next jump because the hoop is occupied by the other person. Find the last hoop that will be jumped into.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line contains an integer T, the number of test cases. Then the test cases follow.</li>
+      <li>Each test case contains a single line of input, a single integer N.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each testcase, output in a single line the answer to the problem.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 10^5</li>
+      <li>1 ≤ N < 2 * 10^5 (N is odd)</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      2
+      1
+      3
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      1
+      2
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: Since there is only 1 hoop, that's the only one to be jumped into.</li>
+      <li>Test Case 2: The first player jumps into hoop 1. The second player jumps into hoop 3 and finally the first player jumps into hoop 2. Then the second player cannot make another jump, so the process stops.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/practice/LP1TO201/problems/HOOPS">Hoop Jump Problem Description</a>.</p>
+<h2>Solution/Codes</h2>
+<li><a href="C++/05_jumping_hoops_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/05_jumping_hoops_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/05_jumping_hoops_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/05_jumping_hoops_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+  t = int(input())
+for _ in range(t):
+    n = int(input())
+    print((n + 1) // 2)
+  </code>
+</pre>
+<img src="assets/day05_image_intermediate.jpg" alt="Day 05 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 06-->
+<!--Beginner-->
+<details><summary>Day-06 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem Name:</strong> Minimum Cars for Friends
+  </li>
+  <li>
+    <strong>Description:</strong> A single car can accommodate at most 4 people. N friends want to go to a restaurant for a party. Find the minimum number of cars required to accommodate all the friends.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line contains a single integer T, the number of test cases. Then the test cases follow.</li>
+      <li>Each test case contains a single line of input, a single integer N - denoting the number of friends.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output the minimum number of cars required to accommodate all the friends.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>2 ≤ N ≤ 1000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      4
+      4
+      2
+      7
+      98
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      1
+      1
+      2
+      25
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: There are only 4 friends and a single car can accommodate 4 people. Thus, only 1 car is required.</li>
+      <li>Test Case 2: There are only 2 friends and a single car can accommodate 4 people. Thus, only 1 car is required.</li>
+      <li>Test Case 3: There are 7 friends and 2 cars can accommodate 8 people. Thus, 2 cars are required.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/MINCARS">Minimum Cars required Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/06_minimum_cars_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/06_minimum_cars_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/06_minimum_cars_beginner.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/06_minimum_cars_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Golang</code> programming language:</p>
+<pre>
+  <code>
+  package main
+
+import "fmt"
+
+func main() {
+    var t int
+    fmt.Scan(&t)
+    for i := 0; i < t; i++ {
+        var n int
+        fmt.Scan(&n)
+        fmt.Println((n + 3) / 4)
+    }
+}
+  </code>
+</pre>
+<img src="assets/day06_image_beginner.jpg" alt="Day 06 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-06 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem Name:</strong> Rearrange Digits for Multiple of 5
+  </li>
+  <li>
+    <strong>Description:</strong> Given a positive integer N, MoEngage wants you to determine if it is possible to rearrange the digits of N (in decimal representation) and obtain a multiple of 5. For example, when N = 108, we can rearrange its digits to construct 180 = 36 * 5, which is a multiple of 5.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line contains an integer T, the number of test cases. The description of the T test cases follows.</li>
+      <li>Each test case consists of two lines:
+        <ul>
+          <li>The first line contains a single integer D, the number of digits in N.</li>
+          <li>The second line consists of a string of length D, the number N (in decimal representation). It is guaranteed that the string does not contain leading zeroes and consists only of the characters 0, 1, ..., 9.</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, print "Yes" if it is possible to rearrange the digits of N so that it becomes a multiple of 5. Otherwise, print "No".</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ D ≤ 1000</li>
+      <li>1 ≤ N < 10^1000</li>
+      <li>Sum of D over all test cases ≤ 1000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      3
+      3
+      115
+      3
+      103
+      3
+      119
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      Yes
+      Yes
+      No
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: The given number is already divisible by 5, therefore the answer is "Yes".</li>
+      <li>Test Case 2: We can obtain 310 = 62 * 5 by rearranging the digits of 103, so the answer is "Yes".</li>
+      <li>Test Case 3: The only numbers that can be obtained by rearranging the digits of 119 are {119, 191, 911}. None of these numbers are multiples of 5, so the answer is "No".</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/DIGARR">Rearranging digits to get a multiple of 5 Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/06_rearrange_digits_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/06_rearrange_digits_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/06_rearrange_digits_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/06_rearrange_digits_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>JavaScript</code> programming language:</p>
+<pre>
+  <code>
+    //❌
+  </code>
+</pre>
+<img src="assets/day06_image_Intermediate.jpg" alt="Day 06 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 07-->
+<!--Beginner-->
+<details><summary>Day-07 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef categorises an Instagram account as spam if the following count of the account is more than 10 times the count of followers. Given the following and follower count of an account as X and Y respectively, find whether it is a spam account.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of input will contain a single integer T, denoting the number of test cases.</li>
+      <li>Each test case consists of two space-separated integers X and Y — the following and follower count of an account, respectively.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output on a new line, YES, if the account is spam and NO otherwise.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 100</li>
+      <li>1 ≤ X, Y ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      4
+      1 10
+      10 1
+      11 1
+      97 7
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      NO
+      NO
+      YES
+      YES
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: The following count is 1 while the follower count is 10. Since the following count is not more than 10 times the follower count, the account is not spam.</li>
+      <li>Test Case 2: The following count is 10 while the follower count is 1. Since the following count is not more than 10 times the follower count, the account is not spam.</li>
+      <li>Test Case 3: The following count is 11 while the follower count is 1. Since the following count is more than 10 times the follower count, the account is spam.</li>
+      <li>Test Case 4: The following count is 97 while the follower count is 7. Since the following count is more than 10 times the follower count, the account is spam.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/INSTAGRAM">Instagram Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/07_spam_account_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/07_spam_account_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/07_spam_account_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/07_spam_account_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+  #include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y;
+        cin >> x >> y;
+        cout << ((x > 10 * y) ? "YES" : "NO") << endl;
+    }
+    return 0;
+}
+  </code>
+</pre>
+<img src="assets/day07_image_beginner.jpg" alt="Day 07 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-07 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> The mayor of your city wants to throw a party and gather the favor of his people in different regions of the city. There are 3 distinct regions in the city, namely A, B, C, comprising of PA, PB, and PC number of people, respectively. However, people from region B are in conflict with people from regions A and C. Help the mayor invite the maximum number of people to the party without any conflicts.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line contains a single integer T, the number of test cases. Then the test cases follow.</li>
+      <li>For each test case, the first line contains three integers PA, PB, and PC, representing the number of people living in regions A, B, and C, respectively.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output the maximum number of people that can be invited to the party without any conflicts.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ PA, PB, PC ≤ 1000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      3
+      2 3 4
+      1 5 2
+      8 8 8
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      6
+      5
+      16
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: The mayor can invite all the people from regions A and C. So the maximum number of people invited is 6.</li>
+      <li>Test Case 2: The mayor can invite all the people from region B. So the maximum number of people invited is 5.</li>
+      <li>Test Case 3: The mayor can invite all the people from any one region without conflicts, so the maximum number of people invited is 16.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/MAYOR_PARTY">Peaceful Party Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/07_mayors_party_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/07_mayors_party_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/07_mayors_party_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/07_mayors_party_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+    //❌ 
+  </code>
+</pre>
+<img src="assets/day07_image_Intermediate.jpg" alt="Day 07 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 08-->
 <!--Day - 09-->
 <!--Day - 10-->
