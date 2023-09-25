@@ -878,6 +878,188 @@ int main() {
 </details>
 
 <!--Day - 08-->
+<!--Beginner-->
+<details><summary>Day-08 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> A geyser has a capacity of X litres of water, and a bucket has a capacity of Y litres of water. One person requires exactly 2 buckets of water to take a bath. Find the maximum number of people that can take a bath using water from one completely filled geyser.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line contains an integer T, the number of test cases. Then the test cases follow.</li>
+      <li>Each test case consists of a single line of input with two integers X and Y, representing the capacity of the geyser and the bucket, respectively.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output the maximum number of people that can take a bath.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ X, Y ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      4
+      10 6
+      25 1
+      100 10
+      30 40
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      0
+      12
+      5
+      0
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test Case 1: One bucket has a capacity of 6 litres. This means that one person requires 2 * 6 = 12 litres of water to take a bath. Since this is less than the total water present in the geyser, 0 people can take a bath.</li>
+      <li>Test Case 2: One bucket has a capacity of 1 litre. This means that one person requires 2 * 1 = 2 litres of water to take a bath. The total amount of water present in the geyser is 25 litres. Thus, 12 people can take a bath. Note that 1 litre of water would remain unused in the geyser.</li>
+      <li>Test Case 3: One bucket has a capacity of 10 litres. This means that one person requires 2 * 10 = 20 litres of water to take a bath. The total amount of water present in the geyser is 100 litres. Thus, 5 people can take a bath. Note that 0 litres of water would remain unused in the geyser after this.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/BATH">Bath in Winters Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/08_geyser_bath_capacity_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/08_geyser_bath_capacity_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/08_geyser_bath_capacity_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/08_geyser_bath_capacity_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Golang</code> programming language:</p>
+<pre>
+  <code>
+  package main
+
+import "fmt"
+
+func main() {
+    var T int
+    fmt.Scan(&T)
+    for i := 0; i < T; i++ {
+        var X, Y int
+        fmt.Scan(&X, &Y)
+        maxPeople := X / (2 * Y)
+        fmt.Println(maxPeople)
+    }
+}
+  </code>
+</pre>
+<img src="assets/day08_image_beginner.jpg" alt="Day 08 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-08 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef decided to buy a new tablet. His budget is <i>B</i>, so he cannot buy a tablet whose price is greater than <i>B</i>. Other than that, he only has one criterion — the area of the tablet's screen should be as large as possible. Of course, the screen of a tablet is always a rectangle.
+  </li>
+  <li>
+    <strong>Input:</strong>
+    <ul>
+      <li>The first line of the input contains a single integer <i>T</i> denoting the number of test cases. The description of <i>T</i> test cases follows.</li>
+      <li>The first line of each test case contains two space-separated integers <i>N</i> and <i>B</i>.</li>
+      <li><i>N</i> lines follow. For each <i>i</i> (1 ≤ <i>i</i> ≤ <i>N</i>), the <i>i</i>-th of these lines contains three space-separated integers <i>Wi</i>, <i>Hi</i>, and <i>Pi</i>.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output:</strong>
+    <ul>
+      <li>For each test case, print a single line. If Chef cannot buy any tablet, it should contain the string "no tablet" (without quotes). Otherwise, it should contain a single integer — the maximum area of the screen of a tablet Chef can buy.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 100</li>
+      <li>1 ≤ <i>N</i> ≤ 100</li>
+      <li>1 ≤ <i>B</i> ≤ 1,000,000</li>
+      <li>1 ≤ <i>Wi</i>, <i>Hi</i> ≤ 10,000</li>
+      <li>1 ≤ <i>Pi</i> ≤ 1,000,000 for each valid <i>i</i></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      3
+      3 6
+      3 4 4
+      5 5 7
+      5 2 5
+      2 6
+      3 6 8
+      5 4 9
+      1 10
+      5 5 10
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      12
+      no tablet
+      25
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Example case 1: The first tablet (with screen area 3 * 4 = 12) is the best option for Chef, since Chef cannot afford the second one, and the third one has a smaller screen.</li>
+      <li>Example case 2: Chef's budget is 6, but all tablets have higher prices, so Chef cannot buy any tablet.</li>
+      <li>Example case 3: The price of the only tablet is exactly equal to Chef's budget, so he is able to buy it.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/TABLET">Buying New Tablet Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/08_tablet_shopping_dilemma_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/08_tablet_shopping_dilemma_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/08_tablet_shopping_dilemma_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/08_tablet_shopping_dilemma_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+T = int(input())
+for _ in range(T):
+    N, B = map(int, input().split())
+    max_area = -1
+    for _ in range(N):
+        W, H, P = map(int, input().split())
+        if P <= B:
+            area = W * H
+            if area > max_area:
+                max_area = area
+    if max_area == -1:
+        print("no tablet")
+    else:
+        print(max_area)
+</code>
+</pre>
+<img src="assets/day08_image_Intermediate.jpg" alt="Day 08 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 09-->
 <!--Day - 10-->
 <!--Day - 11-->
