@@ -212,7 +212,7 @@ func main() {
 <p>Here's an example of using the <code>JavaScript</code> programming language:</p>
 <pre>
   <code>
-  const readline = require('readline');
+const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -458,7 +458,7 @@ int main() {
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 <pre>
   <code>
-  t = int(input())
+t = int(input())
 for _ in range(t):
     x = int(input())
     if x <= 15:
@@ -613,7 +613,7 @@ for _ in range(t):
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
 <pre>
   <code>
-  package main
+package main
 
 import "fmt"
 
@@ -786,7 +786,7 @@ func main() {
 <p>Here's an example of using the <code>C++</code> programming language:</p>
 <pre>
   <code>
-  #include <iostream>
+#include <iostream>
 using namespace std;
 
 int main() {
@@ -945,7 +945,7 @@ int main() {
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
 <pre>
   <code>
-  package main
+package main
 
 import "fmt"
 
@@ -1061,6 +1061,174 @@ for _ in range(T):
 </details>
 
 <!--Day - 09-->
+<!--Beginner-->
+<details><summary>Day-09 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> The summer is at its peak in Chefland. Chef is planning to purchase a water cooler to keep his room cool. He has two options available:
+    <ul>
+      <li>Rent a cooler at the cost of <i>X</i> coins per month.</li>
+      <li>Purchase a cooler for <i>Y</i> coins.</li>
+    </ul>
+    Chef wonders what is the maximum number of months for which he can rent the cooler such that the cost of renting is strictly less than the cost of purchasing it.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of input will contain an integer <i>T</i> — the number of test cases. The description of <i>T</i> test cases follows.</li>
+      <li>The first and only line of each test case contains two integers <i>X</i> and <i>Y</i>, as described in the problem statement.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output the maximum number of months for which he can rent the cooler such that the cost of renting is strictly less than the cost of purchasing it.</li>
+      <li>If Chef should not rent a cooler at all, output <i>0</i>.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 1000</li>
+      <li>1 ≤ <i>X</i>, <i>Y</i> ≤ 10<sup>9</sup></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      2
+      5 12
+      5 5
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      2
+      0
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test case 1: Cost of renting the cooler = 5 coins per month. Cost of purchasing the cooler = 12 coins. So, Chef can rent the cooler for 2 months at the cost of 10 coins, which is strictly less than 12 coins.</li>
+      <li>Test case 2: Cost of renting the cooler = 5 coins per month. Cost of purchasing the cooler = 5 coins. If Chef rents the cooler for 1 month, it will cost 5 coins, which is not strictly less than the cost of purchasing it. So, Chef should not rent the cooler.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/WATERCOOLER2">The Cooler Dilemma 2 Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/09_cooling_chef_beginner.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/09_cooling_chef_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/09_cooling_chef_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/09_cooling_chef_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+<pre>
+  <code>
+    //❌ 
+  </code>
+</pre>
+<img src="assets/day09_image_beginner.jpg" alt="Day 09 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-09 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef recently started working at ABC corporation. Let's number weekdays (Monday through Friday) by integers 1 through 5. For each valid i, the number of hours Chef spent working at the office on weekday i was Ai.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.</li>
+      <li>The first and only line of each test case contains six space-separated integers A1, A2, A3, A4, A5, and P.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, print a single line containing the string "Yes" if Chef has to work on weekends or "No" otherwise (without quotes).
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1,000</li>
+      <li>0 ≤ Ai ≤ 24 for each valid i</li>
+      <li>1 ≤ P ≤ 24</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      2
+      14 10 12 6 18 2
+      10 10 10 10 10 3
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      No
+      Yes
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Example case 1: Here, P=2, so the number of hours Chef has to work from home to handle his workload for days 1 through 5 is [28, 20, 24, 12, 36]. If he works for full 24 hours on each of the five weekdays, he finishes all the work, so he does not have to work on weekends.</li>
+      <li>Example case 2: No matter what Chef does, he will have to work on weekends.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/LOSTWKND">Lost Weekends Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/09_chef_workload_balancing_problem_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/09_chef_workload_balancing_problem_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/09_chef_workload_balancing_problem_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/09_chef_workload_balancing_problem_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Golang</code> programming language:</p>
+<pre>
+  <code>
+package main
+
+import "fmt"
+
+func main() {
+    var T int
+    fmt.Scan(&T)
+    for t := 0; t < T; t++ {
+        var A [5]int
+        var P int
+        for i := 0; i < 5; i++ {
+            fmt.Scan(&A[i])
+        }
+        fmt.Scan(&P)
+        
+        totalHours := 0
+        for i := 0; i < 5; i++ {
+            totalHours += A[i]
+        }
+        
+        if totalHours * P > 120 {
+            fmt.Println("Yes")
+        } else {
+            fmt.Println("No")
+        }
+    }
+}
+  </code>
+</pre>
+<img src="assets/day09_image_Intermediate.jpg" alt="Day 09 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 10-->
 <!--Day - 11-->
 <!--Day - 12-->
