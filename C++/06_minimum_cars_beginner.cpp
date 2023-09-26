@@ -1,15 +1,15 @@
-package main
+#include <iostream>
+using namespace std;
 
-import "fmt"
-
-func main() {
-    var t int
-    fmt.Scan(&t)
-    for i := 0; i < t; i++ {
-        var n int
-        fmt.Scan(&n)
-        fmt.Println((n + 3) / 4)
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        cout << (n + 3) / 4 << endl;
     }
+    return 0;
 }
 
 /**********************************************************
