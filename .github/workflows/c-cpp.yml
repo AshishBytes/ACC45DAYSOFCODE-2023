@@ -1,4 +1,4 @@
-name: C/C++ CI
+name: C++ CI
 
 on:
   push:
@@ -12,12 +12,22 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
-    - name: configure
-      run: ./configure
-    - name: make
-      run: make
-    - name: make check
-      run: make check
-    - name: make distcheck
-      run: make distcheck
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up C++ environment
+      run: sudo apt-get install g++
+      
+    - name: Compile and run C++ programs
+      run: |
+        cd Cplusplus
+        g++ -o program1 program1.cpp
+        g++ -o program2 program2.cpp
+        # Add more compilation and execution steps for other programs
+        
+    - name: Test C++ programs
+      run: |
+        cd Cplusplus
+        ./program1
+        ./program2
+        # Add more test commands for other programs
