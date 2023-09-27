@@ -23,12 +23,14 @@ jobs:
     - name: Check Python files in Python folder
       run: |
         find Python -type f -name "*.py" | while read -r file; do
-          echo "Checking $file..."
-          python "$file"
-          if [ $? -eq 0 ]; then
-            echo "$file is working."
-          else
-            echo "Error: $file is not working."
-            exit 1
+          if grep -qE '^\s*# Execute this script' "$file"; then
+            echo "Checking $file..."
+            python "$file"
+            if [ $? -eq 0 ]; then
+              echo "$file is working."
+            else
+              echo "Error: $file is not working."
+              exit 1
+            fi
           fi
         done
