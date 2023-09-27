@@ -17,17 +17,18 @@ jobs:
 
     - name: Set up C++ environment
       run: sudo apt-get install g++
-      
+
     - name: Compile and run C++ programs
       run: |
-        cd Cplusplus
-        g++ -o program1 program1.cpp
-        g++ -o program2 program2.cpp
-        # Add more compilation and execution steps for other programs
-        
-    - name: Test C++ programs
-      run: |
-        cd Cplusplus
-        ./program1
-        ./program2
-        # Add more test commands for other programs
+        cd C++
+        for file in *.cpp; do
+          echo "Checking $file..."
+          g++ -o "$file.out" "$file"
+          if [ $? -eq 0 ]; then
+            echo "$file is working."
+            ./"$file.out"
+          else
+            echo "Error: $file is not working."
+            exit 1
+          fi
+        done
