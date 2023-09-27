@@ -1230,6 +1230,184 @@ func main() {
 </details>
 
 <!--Day - 10-->
+<!--Beginner-->
+<details><summary>Day-10 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Valentine's Day is approaching, and Chef wants to buy some chocolates for someone special.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line will contain <i>T</i>, the number of test cases. Then the test cases follow.</li>
+      <li>Each test case contains a single line of input, two integers <i>X</i> and <i>Y</i>, as described in the problem statement.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output the maximum number of chocolates Chef can buy.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 1000</li>
+      <li>1 ≤ <i>X</i>, <i>Y</i> ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      4
+      5 10
+      16 5
+      35 7
+      100 1
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      0
+      3
+      5
+      100
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test case 1: Chef has 5 rupees but the cost of one chocolate is 10 rupees. Therefore Chef cannot buy any chocolates.</li>
+      <li>Test case 2: Chef has 16 rupees and the cost of one chocolate is 5 rupees. Therefore Chef can buy at max 3 chocolates since buying 4 chocolates would cost 20 rupees.</li>
+      <li>Test case 3: Chef has 35 rupees and the cost of one chocolate is 7 rupees. Therefore Chef can buy at max 5 chocolates for 35 rupees.</li>
+      <li>Test case 4: Chef has 100 rupees and the cost of one chocolate is 1 rupee. Therefore Chef can buy at max 100 chocolates for 100 rupees.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/VALENTINE">Valentine is Coming Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/10_valentines_chocolates_problem_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/10_valentines_chocolates_problem_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/10_valentines_chocolates_problem_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/10_valentines_chocolates_problem_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+        cout << X / Y << endl;
+    }
+    return 0;
+}
+  </code>
+</pre>
+<img src="assets/day10_image_beginner.jpg" alt="Day 10 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-10 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef has 3 bags that she wants to take on a flight. They weigh A, B, and C kgs respectively. She wants to check-in exactly two of these bags and carry the remaining one bag with her. The airline restrictions say that the total sum of the weights of the bags that are checked-in cannot exceed D kgs, and the weight of the bag which is carried cannot exceed E kgs. Find if Chef can take all three bags on the flight.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows.</li>
+      <li>Each testcase contains a single line of input, five space-separated integers A, B, C, D, E.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each testcase, output in a single line "YES" if Chef can take all three bags with her, or "NO" if she cannot.</li>
+      <li>You may print each character of the string in uppercase or lowercase (e.g., "yEs", "yes", "Yes," and "YES" will all be treated as identical).</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 36000</li>
+      <li>1 ≤ A, B, C ≤ 10</li>
+      <li>15 ≤ D ≤ 20</li>
+      <li>5 ≤ E ≤ 10</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      3
+      1 1 1 15 5
+      8 7 6 15 5
+      8 5 7 15 6
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      YES
+      NO
+      YES
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test case 1: Chef can check-in the first and second bag (since 1 + 1 ≤ 15) and carry the third bag with her (since 1 ≤ 5).</li>
+      <li>Test case 2: None of the three bags can be carried in hand without violating the airport restrictions.</li>
+      <li>Test case 3: Chef can check-in the first and the third bag (since 8 + 7 ≤ 15) and carry the second bag with her (since 5 ≤ 6).</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/AIRLINE">Airline Restrictions Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/10_flight_baggage_problem_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/10_flight_baggage_problem_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/10_flight_baggage_problem_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/10_flight_baggage_problem_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int A, B, C, D, E;
+        cin >> A >> B >> C >> D >> E;
+        if ((A + B <= D && C <= E) || (B + C <= D && A <= E) || (A + C <= D && B <= E)) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+    return 0;
+}
+  </code>
+</pre>
+<img src="assets/day10_image_Intermediate.jpg" alt="Day 10 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 11-->
 <!--Day - 12-->
 <!--Day - 13-->
