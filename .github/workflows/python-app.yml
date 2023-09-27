@@ -22,16 +22,13 @@ jobs:
 
     - name: Check Python files in Python folder
       run: |
-        cd Python
-        for file in *.py; do
-          if [ -f "$file" ]; then  # Check if the file exists
-            echo "Checking $file..."
-            python "$file"
-            if [ $? -eq 0 ]; then
-              echo "$file is working."
-            else
-              echo "Error: $file is not working."
-              exit 1
-            fi
+        find Python -type f -name "*.py" | while read -r file; do
+          echo "Checking $file..."
+          python "$file"
+          if [ $? -eq 0 ]; then
+            echo "$file is working."
+          else
+            echo "Error: $file is not working."
+            exit 1
           fi
         done
