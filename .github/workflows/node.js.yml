@@ -21,8 +21,14 @@ jobs:
         node-version: 14.x
         cache: 'npm'
 
-    - name: Install dependencies
-      run: npm ci
+    - name: Check for dependencies lock file
+      run: |
+        if [ -f package-lock.json ]; then
+          echo "Found package-lock.json, installing dependencies..."
+          npm ci
+        else
+          echo "package-lock.json not found, skipping npm install."
+        fi
 
     - name: Check JavaScript files
       run: |

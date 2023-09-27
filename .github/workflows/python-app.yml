@@ -41,12 +41,14 @@ jobs:
       run: |
         cd Python
         for file in *.py; do
-          echo "Checking $file..."
-          python "$file"
-          if [ $? -eq 0 ]; then
-            echo "$file is working."
-          else
-            echo "Error: $file is not working."
-            exit 1
+          if [ -f "$file" ]; then  # Check if the file exists
+            echo "Checking $file..."
+            python "$file"
+            if [ $? -eq 0 ]; then
+              echo "$file is working."
+            else
+              echo "Error: $file is not working."
+              exit 1
+            fi
           fi
         done
