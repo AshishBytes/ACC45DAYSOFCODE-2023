@@ -390,7 +390,7 @@ int main() {
 <img src="assets/day04_image_Intermediate.jpg" alt="Day 04 Image Intermediate">
 </ol>
 </details>
-<!--Day - 05-->
+
 <!--Day - 05-->
 <!--Beginner-->
 <details><summary>Day-05 - Beginner</summary><ol>
@@ -1409,6 +1409,166 @@ int main() {
 </details>
 
 <!--Day - 11-->
+<!--Beginner-->
+<details><summary>Day-11 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> There is a cricket match in Chefland. Chef's team requires <i>N</i> runs to win in <i>M</i> overs.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of input will contain a single integer <i>T</i>, denoting the number of test cases.</li>
+      <li>Each test case consists of two space-separated integers <i>N</i> and <i>M</i> — the number of runs required to win the game and the remaining number of overs.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output on a new line, YES, if Chef's team can win the game. Otherwise, output NO.</li>
+      <li>You can print each character in uppercase or lowercase. For example NO, no, No, and nO are all considered identical.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 1000</li>
+      <li>1 ≤ <i>N</i> ≤ 1000</li>
+      <li>1 ≤ <i>M</i> ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      4
+      500 20
+      100 2
+      30 1
+      216 6
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      YES
+      NO
+      YES
+      YES
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test case 1: Chef's team requires 500 runs to win. If they hit 6 runs on every ball for 13 overs, they will score 6 * 6 * 13 = 468 runs. In the 14th over, they can hit 6 runs in the first five balls and 2 runs in the sixth ball to get a total of 468 + 6 * 5 + 2 = 500 runs. Thus, Chef's team can win the game.</li>
+      <li>Test case 2: Since 100 is greater than the maximum runs that can be scored in 2 overs, it is not possible for Chef's team to win the game.</li>
+      <li>Test case 3: Since 30 is less than the maximum runs that can be scored in 1 over, it is possible for Chef's team to win the game.</li>
+      <li>Test case 4: Since 216 is equal to the maximum runs that can be scored in 6 overs, it is possible for Chef's team to win the game.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CRICMATCH">Cricket Match Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/11_cricket_match_beginner.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/11_cricket_match_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/11_cricket_match_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/11_cricket_match_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+    //❌
+  </code>
+</pre>
+<img src="assets/day11_image_beginner.jpg" alt="Day 11 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-11 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef has an array <i>A</i> of length <i>N</i>. In one operation, Chef can remove any one element from the array. Determine the minimum number of operations required to make all the elements same.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of input will contain a single integer <i>T</i>, denoting the number of test cases.</li>
+      <li>Each test case consists of multiple lines of input.</li>
+      <li>The first line of each test case contains a single integer <i>N</i> —the length of Array <i>A</i>.</li>
+      <li>Next line contains <i>N</i> space-separated integers <i>A1, A2, A3, …, An</i> - denoting the array <i>A</i>.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output the minimum number of operations required to make all the elements same.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 4000</li>
+      <li>1 ≤ <i>N</i> ≤ 10<sup>5</sup></li>
+      <li>1 ≤ <i>Ai</i> ≤ <i>N</i></li>
+      <li>Sum of <i>N</i> over all test cases do not exceed 3 × 10<sup>5</sup></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      4
+      3
+      3 3 3
+      6
+      1 3 2 1 2 2
+      4
+      1 2 1 2
+      5
+      1 3 2 4 5
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      0
+      3
+      2
+      4
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test case 1: All the elements are already the same. Thus, we need to perform zero operations.</li>
+      <li>Test case 2: We remove the elements 1, 3, and 1 using three operations. The array becomes [2, 2, 2] where all elements are the same.</li>
+      <li>Test case 3: We remove the elements 1 and 1 using two operations. The array becomes [2, 2] where all elements are the same.</li>
+      <li>Test case 4: We remove the elements 1, 3, 2, and 5 using four operations. The array becomes [5].</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/REMOVEBAD">Remove Bad elements Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/11_minimum_operations_description_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/11_minimum_operations_description_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/11_minimum_operations_description_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/11_minimum_operations_description_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+    //❌
+  </code>
+</pre>
+<img src="assets/day11_image_Intermediate.jpg" alt="Day 11 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 12-->
 <!--Day - 13-->
 <!--Day - 14-->
