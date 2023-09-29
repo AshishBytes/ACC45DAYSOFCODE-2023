@@ -21,13 +21,13 @@
 </div>
 
 <!--ACC45DAYSOFCODE-2023-->
-<details><summary>ACC45DAYSOFCODE-2023</summary><ol>
+<h1>ACC45DAYSOFCODE-2023</h1>
 
 <!--Day - 01-->
-<details><summary>Day-01</summary><ol>
-<p>This is the content for Day 01.</p>
-<h2>Tasks for Day 01:</h2>
-<ul>
+<h2>Day-01</h2>
+<details>
+<summary>Tasks for Day 01:</summary>
+<div>
   <li>Recently, Chef visited his doctor. The doctor advised Chef to drink at least 2000 ml of water each day.
 
 Chef drank X ml of water today. Determine if Chef followed the doctor's advice or not.
@@ -52,8 +52,10 @@ Test case 2: Chef did not follow the doctor's advice since he drank
 
 Test case 3: Chef followed the doctor's advice since he drank 2000 ml of water which is >= 2000 ml.</li>
 </ul>
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/practice/PCL05/problems/WATERCONS">Water Consumption Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/01_watercons.cpp"><code>C++</code></a></li>
@@ -61,8 +63,8 @@ Test case 3: Chef followed the doctor's advice since he drank 2000 ml of water w
 <li><a href="JavaScript/01_watercons.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/01_watercons.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
-<pre>
-  <code>
+
+```python
 T = int(input())
 for _ in range(T):
     X = int(input())
@@ -70,16 +72,23 @@ for _ in range(T):
         print("YES")
     else:
         print("NO")
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day01_image.jpg" alt="Day 01 Image">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 02-->
-<details><summary>Day-02</summary><ol>
-<p>This is the content for Day 02.</p>
-<h2>Tasks for Day 02:</h2>
+<h2>Day-02</h2>
+<details>
+<summary>Tasks for Day 02:</summary>
+<div>
 <ul>
   <li>Chef has X 5 rupee coins and Y 10 rupee coins. Chef goes to a shop to buy chocolates for Chefina where each chocolate costs Z rupees. Find the maximum number of chocolates that Chef can buy for Chefina.</li>
   <li>
@@ -120,8 +129,10 @@ for _ in range(T):
     </ul>
   </li>
 </ul>
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/practice/PCBM01/problems/CCHOCOLATES">Chef and Chocolates Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/02_cchocolates.cpp"><code>C++</code></a></li>
@@ -129,8 +140,8 @@ for _ in range(T):
 <li><a href="JavaScript/02_cchocolates.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/02_cchocolates.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
-<pre>
-  <code>
+
+```go
 package main
 
 import "fmt"
@@ -145,16 +156,23 @@ func main() {
         fmt.Println(maxChocolates)
     }
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day02_image.jpg" alt="Day 02 Image">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 03-->
-<details><summary>Day-03</summary><ol>
-<p>This is the content for Day 03.</p>
-<h2>Tasks for Day 03:</h2>
+<h2>Day-03</h2>
+<details>
+<summary>Tasks for Day 03:</summary>
+<div>
 <ul>
   <li>
     <strong>Problem</strong>
@@ -201,8 +219,11 @@ func main() {
     </ul>
   </li>
 </ul>
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/CHAIRS_">Chairs Requirement Problem Description</a>.</p>
+</details>
+
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/03_chair_distribution.cpp"><code>C++</code></a></li>
@@ -210,8 +231,8 @@ func main() {
 <li><a href="JavaScript/03_chair_distribution.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/03_chair_distribution.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>JavaScript</code> programming language:</p>
-<pre>
-  <code>
+
+```js
 const readline = require('readline');
 
 const rl = readline.createInterface({
@@ -247,16 +268,24 @@ function processInput() {
     }
     rl.close();
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day03_image.jpg" alt="Day 03 Image">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 04-->
 <!--Beginner-->
-<details><summary>Day-04 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
+<h2>Day-04 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
 <ul>
   <li>Chef has started working at the candy store. The store has 100 chocolates in total.</li>
   <li>Chef’s daily goal is to sell X chocolates. For each chocolate sold, he will get 1 rupee. However, if Chef exceeds his daily goal, he gets 2 rupees per chocolate for each extra chocolate.</li>
@@ -309,8 +338,10 @@ function processInput() {
     </ul>
   </li>
 </ul>
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/practice/PCBM01/problems/CANDYSTORE">Candy Store Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/04_candy_store_beginner.cpp"><code>C++</code></a></li>
@@ -318,8 +349,8 @@ function processInput() {
 <li><a href="JavaScript/04_candy_store_beginner.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/04_candy_store_beginner.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -338,20 +369,67 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day04_image_beginner.jpg" alt="Day 04 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-04 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
-  <li>Task here!!</li>
+<h2>Day-04 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+  <li>
+    <strong>Problem Name:</strong> "Hare and Tortoise Race"
+  </li>
+  <li>
+    <strong>Problem Description:</strong> The tortoise and the hare decide to run a race, yet again. This time around, however, the hare has gotten a bit smarter! The racetrack is a straight line, 𝐿 meters long. The tortoise moves at 𝑉1 meters per second, while the hare moves at 𝑉2 meters per second. It is known that 𝑉1 < 𝑉2, that is, the hare is strictly faster. The hare still wants to be a bit lazy, so it decides to give the tortoise a headstart — the hare will wait for an integer number of seconds before starting to run. Unfortunately, the animals' measuring devices aren't up to par — they can only measure in integer seconds, and will round up — so for example...
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input will contain a single integer 𝑇, denoting the number of test cases. The first and only line of each test case contains three space-separated integers 𝐿, 𝑉1, and 𝑉2 — the length of the racetrack, the tortoise's speed, and the hare's speed.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output on a new line the longest time the hare can wait, while still being able to win the race.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ 𝑇 ≤ 10,000</li>
+      <li>1 ≤ 𝐿 ≤ 1,000</li>
+      <li>1 ≤ 𝑉1 < 𝑉2 ≤ 1,000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      5
+      10 2 3
+      10 2 4
+      15 3 5
+      8 1 20
+      14 5 6
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      0
+      1
+      1
+      6
+      -1
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong> Test case 1: Here, 𝐿 = 10, 𝑉1 = 2, 𝑉2 = 3. The tortoise takes 5 seconds to finish the race, while the hare takes 3.33 seconds; which rounds up to 4. So, the hare cannot wait at all before starting.</li>
 </ul>
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/START101D/problems/SMARTER">Work Smarter, Not Harder Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/04_MindfulRace_Intermediate.cpp"><code>C++</code></a></li>
@@ -359,8 +437,8 @@ int main() {
 <li><a href="JavaScript/04_MindfulRace_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/04_MindfulRace_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
 #include <iostream>
 #include <math.h>
 #include <iomanip>
@@ -385,17 +463,25 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day04_image_Intermediate.jpg" alt="Day 04 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
+
 
 <!--Day - 05-->
 <!--Beginner-->
-<details><summary>Day-05 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-05 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Chef's phone shows a Battery Low notification if the battery level is 15% or less.
   </li>
@@ -445,19 +531,19 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/BATTERYLOW">Battery Low Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/05_battery_low_beginner.cpp"><code>C++</code></a></li>
 <li><a href="Python/05_battery_low_beginner.py"><code>Python</code></a></li>
 <li><a href="JavaScript/05_battery_low_beginner.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/05_battery_low_beginner.go"><code>Golang</code></a></li>
-
 <p>Here's an example of using the <code>Python</code> programming language:</p>
-<pre>
-  <code>
+
+```python
 t = int(input())
 for _ in range(t):
     x = int(input())
@@ -465,16 +551,19 @@ for _ in range(t):
         print("Yes")
     else:
         print("No")
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day05_image_beginner.jpg" alt="Day 05 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-05 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-05 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> You and your friend are playing a game with hoops. There are N hoops (where N is odd) in a row. You jump into hoop 1, and your friend jumps into hoop N. Then you jump into hoop 2, and after that, your friend jumps into hoop (N-1), and so on. The process ends when someone cannot make the next jump because the hoop is occupied by the other person. Find the last hoop that will be jumped into.
   </li>
@@ -521,32 +610,41 @@ for _ in range(t):
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/practice/LP1TO201/problems/HOOPS">Hoop Jump Problem Description</a>.</p>
+</details>
+
 <h2>Solution/Codes</h2>
 <li><a href="C++/05_jumping_hoops_Intermediate.cpp"><code>C++</code></a></li>
 <li><a href="Python/05_jumping_hoops_Intermediate.py"><code>Python</code></a></li>
 <li><a href="JavaScript/05_jumping_hoops_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/05_jumping_hoops_Intermediate.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
-<pre>
-  <code>
+
+```python
   t = int(input())
 for _ in range(t):
     n = int(input())
     print((n + 1) // 2)
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day05_image_intermediate.jpg" alt="Day 05 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 06-->
 <!--Beginner-->
-<details><summary>Day-06 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-06 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem Name:</strong> Minimum Cars for Friends
   </li>
@@ -601,9 +699,10 @@ for _ in range(t):
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/MINCARS">Minimum Cars required Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/06_minimum_cars_beginner.cpp"><code>C++</code></a></li>
@@ -611,8 +710,8 @@ for _ in range(t):
 <li><a href="JavaScript/06_minimum_cars_beginner.js"><code>JavaScript</code></a></li>
 <li><a href="Golang/06_minimum_cars_beginner.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
-<pre>
-  <code>
+
+```go
 package main
 
 import "fmt"
@@ -626,16 +725,19 @@ func main() {
         fmt.Println((n + 3) / 4)
     }
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day06_image_beginner.jpg" alt="Day 06 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-06 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-06 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem Name:</strong> Rearrange Digits for Multiple of 5
   </li>
@@ -698,9 +800,10 @@ func main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/DIGARR">Rearranging digits to get a multiple of 5 Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/06_rearrange_digits_Intermediate.cpp"><code>❌ C++</code></a></li>
@@ -708,20 +811,28 @@ func main() {
 <li><a href="JavaScript/06_rearrange_digits_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/06_rearrange_digits_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>JavaScript</code> programming language:</p>
-<pre>
-  <code>
+
+
+```js
     //❌
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day06_image_Intermediate.jpg" alt="Day 06 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 07-->
 <!--Beginner-->
-<details><summary>Day-07 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-07 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Chef categorises an Instagram account as spam if the following count of the account is more than 10 times the count of followers. Given the following and follower count of an account as X and Y respectively, find whether it is a spam account.
   </li>
@@ -774,9 +885,10 @@ func main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/INSTAGRAM">Instagram Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/07_spam_account_beginner.cpp"><code>C++</code></a></li>
@@ -784,8 +896,8 @@ func main() {
 <li><a href="JavaScript/07_spam_account_beginner.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/07_spam_account_beginner.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -799,16 +911,19 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day07_image_beginner.jpg" alt="Day 07 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-07 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-07 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> The mayor of your city wants to throw a party and gather the favor of his people in different regions of the city. There are 3 distinct regions in the city, namely A, B, C, comprising of PA, PB, and PC number of people, respectively. However, people from region B are in conflict with people from regions A and C. Help the mayor invite the maximum number of people to the party without any conflicts.
   </li>
@@ -858,9 +973,10 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/MAYOR_PARTY">Peaceful Party Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/07_mayors_party_Intermediate.cpp"><code>❌ C++</code></a></li>
@@ -868,20 +984,28 @@ int main() {
 <li><a href="JavaScript/07_mayors_party_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/07_mayors_party_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
-<pre>
-  <code>
+
+
+```python
     //❌ 
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day07_image_Intermediate.jpg" alt="Day 07 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 08-->
 <!--Beginner-->
-<details><summary>Day-08 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-08 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> A geyser has a capacity of X litres of water, and a bucket has a capacity of Y litres of water. One person requires exactly 2 buckets of water to take a bath. Find the maximum number of people that can take a bath using water from one completely filled geyser.
   </li>
@@ -933,9 +1057,10 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/BATH">Bath in Winters Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/08_geyser_bath_capacity_beginner.cpp"><code>C++</code></a></li>
@@ -943,8 +1068,9 @@ int main() {
 <li><a href="JavaScript/08_geyser_bath_capacity_beginner.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/08_geyser_bath_capacity_beginner.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
-<pre>
-  <code>
+
+
+```go
 package main
 
 import "fmt"
@@ -959,16 +1085,19 @@ func main() {
         fmt.Println(maxPeople)
     }
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day08_image_beginner.jpg" alt="Day 08 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-08 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-08 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Chef decided to buy a new tablet. His budget is <i>B</i>, so he cannot buy a tablet whose price is greater than <i>B</i>. Other than that, he only has one criterion — the area of the tablet's screen should be as large as possible. Of course, the screen of a tablet is always a rectangle.
   </li>
@@ -1028,9 +1157,10 @@ func main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/TABLET">Buying New Tablet Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/08_tablet_shopping_dilemma_Intermediate.cpp"><code>C++</code></a></li>
@@ -1038,8 +1168,8 @@ func main() {
 <li><a href="JavaScript/08_tablet_shopping_dilemma_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/08_tablet_shopping_dilemma_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
-<pre>
-  <code>
+
+```python
 T = int(input())
 for _ in range(T):
     N, B = map(int, input().split())
@@ -1054,17 +1184,25 @@ for _ in range(T):
         print("no tablet")
     else:
         print(max_area)
-</code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day08_image_Intermediate.jpg" alt="Day 08 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 09-->
 <!--Beginner-->
-<details><summary>Day-09 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-09 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+
   <li>
     <strong>Problem:</strong> The summer is at its peak in Chefland. Chef is planning to purchase a water cooler to keep his room cool. He has two options available:
     <ul>
@@ -1117,9 +1255,10 @@ for _ in range(T):
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/WATERCOOLER2">The Cooler Dilemma 2 Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/09_cooling_chef_beginner.cpp"><code>❌ C++</code></a></li>
@@ -1127,19 +1266,22 @@ for _ in range(T):
 <li><a href="JavaScript/09_cooling_chef_beginner.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/09_cooling_chef_beginner.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
-<pre>
-  <code>
+
+```Python
     //❌ 
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day09_image_beginner.jpg" alt="Day 09 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-09 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-09 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Chef recently started working at ABC corporation. Let's number weekdays (Monday through Friday) by integers 1 through 5. For each valid i, the number of hours Chef spent working at the office on weekday i was Ai.
   </li>
@@ -1184,9 +1326,10 @@ for _ in range(T):
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/LOSTWKND">Lost Weekends Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/09_chef_workload_balancing_problem_Intermediate.cpp"><code>C++</code></a></li>
@@ -1194,8 +1337,8 @@ for _ in range(T):
 <li><a href="JavaScript/09_chef_workload_balancing_problem_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/09_chef_workload_balancing_problem_Intermediate.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
-<pre>
-  <code>
+
+```go
 package main
 
 import "fmt"
@@ -1223,17 +1366,24 @@ func main() {
         }
     }
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day09_image_Intermediate.jpg" alt="Day 09 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 10-->
 <!--Beginner-->
-<details><summary>Day-10 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-10 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Valentine's Day is approaching, and Chef wants to buy some chocolates for someone special.
   </li>
@@ -1286,9 +1436,10 @@ func main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/VALENTINE">Valentine is Coming Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/10_valentines_chocolates_problem_beginner.cpp"><code>C++</code></a></li>
@@ -1296,8 +1447,8 @@ func main() {
 <li><a href="JavaScript/10_valentines_chocolates_problem_beginner.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/10_valentines_chocolates_problem_beginner.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1311,16 +1462,19 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day10_image_beginner.jpg" alt="Day 10 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-10 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-10 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Chef has 3 bags that she wants to take on a flight. They weigh A, B, and C kgs respectively. She wants to check-in exactly two of these bags and carry the remaining one bag with her. The airline restrictions say that the total sum of the weights of the bags that are checked-in cannot exceed D kgs, and the weight of the bag which is carried cannot exceed E kgs. Find if Chef can take all three bags on the flight.
   </li>
@@ -1373,9 +1527,10 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/AIRLINE">Airline Restrictions Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/10_flight_baggage_problem_Intermediate.cpp"><code>C++</code></a></li>
@@ -1383,8 +1538,9 @@ int main() {
 <li><a href="JavaScript/10_flight_baggage_problem_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/10_flight_baggage_problem_Intermediate.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1402,17 +1558,24 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day10_image_Intermediate.jpg" alt="Day 10 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 11-->
 <!--Beginner-->
-<details><summary>Day-11 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-11 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> There is a cricket match in Chefland. Chef's team requires <i>N</i> runs to win in <i>M</i> overs.
   </li>
@@ -1467,9 +1630,10 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/CRICMATCH">Cricket Match Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/11_cricket_match_beginner.cpp"><code>❌ C++</code></a></li>
@@ -1477,19 +1641,23 @@ int main() {
 <li><a href="JavaScript/11_cricket_match_beginner.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/11_cricket_match_beginner.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+
+```cpp
     //❌
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day11_image_beginner.jpg" alt="Day 11 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-11 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-11 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Chef has an array <i>A</i> of length <i>N</i>. In one operation, Chef can remove any one element from the array. Determine the minimum number of operations required to make all the elements same.
   </li>
@@ -1550,9 +1718,10 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/REMOVEBAD">Remove Bad elements Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/11_minimum_operations_description_Intermediate.cpp"><code>C++</code></a></li>
@@ -1560,20 +1729,27 @@ int main() {
 <li><a href="JavaScript/11_minimum_operations_description_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/11_minimum_operations_description_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
     //❌
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day11_image_Intermediate.jpg" alt="Day 11 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 12-->
 <!--Beginner-->
-<details><summary>Day-12 - Beginner</summary><ol>
-<p>Today's Beginner problem:</p>
-<ul>
+<h2>Day-12 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Mario's bullet moves at <i>X</i> pixels per frame. He wishes to shoot a goomba standing <i>Y</i> pixels away from him. The goomba does not move. Find the minimum time (in seconds) after which Mario should shoot the bullet, such that it hits the goomba after at least <i>Z</i> seconds from now.
   </li>
@@ -1624,9 +1800,10 @@ int main() {
     </ul>
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/BULLET">Mario and Bullet Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/12_marios_bullet_challenge_beginner.cpp"><code>C++</code></a></li>
@@ -1634,8 +1811,8 @@ int main() {
 <li><a href="JavaScript/12_marios_bullet_challenge_beginner.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/12_marios_bullet_challenge_beginner.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1654,16 +1831,19 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day12_image_beginner.jpg" alt="Day 12 Image Beginner">
-</ol>
 </details>
 
+
 <!--Intermediate-->
-<details><summary>Day-12 - Intermediate</summary><ol>
-<p>Today's Intermediate problem:</p>
-<ul>
+<h2>Day-12 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
   <li>
     <strong>Problem:</strong> Bears love candies and games involving eating them. Limak and Bob play the following game. Limak eats 1 candy, then Bob eats 2 candies, then Limak eats 3 candies, then Bob eats 4 candies, and so on. Once someone can't eat what he is supposed to eat, he loses.
   </li>
@@ -1715,9 +1895,10 @@ int main() {
     <strong>Explanation:</strong> (Sample explanation provided in the problem statement)
   </li>
 </ul>
-
+</div>
 <p>For more details, You can find the full problem description on CodeChef's website:
 <a href="https://www.codechef.com/problems/CANDY123">Bear and Candies 123 Problem Description</a>.</p>
+</details>
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/12_candies_game_problem_Intermediate.cpp"><code>C++</code></a></li>
@@ -1725,8 +1906,8 @@ int main() {
 <li><a href="JavaScript/12_candies_game_problem_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/12_candies_game_problem_Intermediate.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
-<pre>
-  <code>
+
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -1756,11 +1937,17 @@ int main() {
     }
     return 0;
 }
-  </code>
-</pre>
+```
+
+<details>
+<summary>Images</summary>
 <img src="assets/day12_image_Intermediate.jpg" alt="Day 12 Image Intermediate">
-</ol>
 </details>
+<br>
+
+---
+
+<br>
 
 <!--Day - 13-->
 <!--Day - 14-->
