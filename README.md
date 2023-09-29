@@ -1570,6 +1570,198 @@ int main() {
 </details>
 
 <!--Day - 12-->
+<!--Beginner-->
+<details><summary>Day-12 - Beginner</summary><ol>
+<p>Today's Beginner problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Mario's bullet moves at <i>X</i> pixels per frame. He wishes to shoot a goomba standing <i>Y</i> pixels away from him. The goomba does not move. Find the minimum time (in seconds) after which Mario should shoot the bullet, such that it hits the goomba after at least <i>Z</i> seconds from now.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of input will contain an integer <i>T</i> — the number of test cases. The description of <i>T</i> test cases follows.</li>
+      <li>Each test case consists of a single line of input, containing three space-separated integers <i>X</i>, <i>Y</i>, and <i>Z</i>.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output in a single line the minimum time (in seconds) after which Mario should shoot the bullet, such that it hits the goomba after at least <i>Z</i> seconds from now.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 100</li>
+      <li>1 ≤ <i>X</i>, <i>Y</i>, <i>Z</i> ≤ 100</li>
+      <li><i>X</i> divides <i>Y</i></li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      3
+      3 3 5
+      2 4 1
+      3 12 8
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      4
+      0
+      4
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong>
+    <ul>
+      <li>Test case 1: The speed of the bullet is 3 pixels per frame and the goomba is 3 pixels away from Mario. Thus, it would take 1 second for the bullet to reach the goomba. Mario wants the bullet to reach goomba after at least 5 seconds. So, he should fire the bullet after 4 seconds.</li>
+      <li>Test case 2: The speed of the bullet is 2 pixels per frame and the goomba is 4 pixels away from Mario. Thus, it would take 2 seconds for the bullet to reach the goomba. Mario wants the bullet to reach the goomba after at least 1 second. So, he should fire the bullet after 0 seconds. Note that, this is the minimum time after which he can shoot a bullet.</li>
+      <li>Test case 3: The speed of the bullet is 3 pixels per frame and the goomba is 12 pixels away from Mario. Thus, it would take 4 seconds for the bullet to reach the goomba. Mario wants the bullet to reach goomba after at least 8 seconds. So, he should fire the bullet after 4 seconds.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/BULLET">Mario and Bullet Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/12_marios_bullet_challenge_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/12_marios_bullet_challenge_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/12_marios_bullet_challenge_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/12_marios_bullet_challenge_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, y, z, a;
+        cin >> x >> y >> z;
+        a = y / x;
+        if (a < z) {
+            cout << z - a << endl;
+        } else {
+            cout << 0 << endl;
+        }
+    }
+    return 0;
+}
+  </code>
+</pre>
+<img src="assets/day12_image_beginner.jpg" alt="Day 12 Image Beginner">
+</ol>
+</details>
+
+<!--Intermediate-->
+<details><summary>Day-12 - Intermediate</summary><ol>
+<p>Today's Intermediate problem:</p>
+<ul>
+  <li>
+    <strong>Problem:</strong> Bears love candies and games involving eating them. Limak and Bob play the following game. Limak eats 1 candy, then Bob eats 2 candies, then Limak eats 3 candies, then Bob eats 4 candies, and so on. Once someone can't eat what he is supposed to eat, he loses.
+  </li>
+  <li>
+    <strong>Input:</strong> The first line of the input contains an integer <i>T</i> denoting the number of test cases. The description of <i>T</i> test cases follows. Each test case contains two integers <i>A</i> and <i>B</i> denoting the maximum possible number of candies Limak can eat and the maximum possible number of candies Bob can eat respectively.
+  </li>
+  <li>
+    <strong>Output:</strong> For each test case, output a single line containing one string — the name of the winner ("Limak" or "Bob").
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ <i>T</i> ≤ 1000</li>
+      <li>1 ≤ <i>A</i>, <i>B</i> ≤ 1000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input:</strong>
+    <pre>
+      10
+      3 2
+      4 2
+      1 1
+      1 2
+      1 3
+      9 3
+      9 11
+      9 12
+      9 1000
+      8 11
+    </pre>
+  </li>
+  <li>
+    <strong>Sample Output:</strong>
+    <pre>
+      Bob
+      Limak
+      Limak
+      Bob
+      Bob
+      Limak
+      Limak
+      Bob
+      Bob
+      Bob
+    </pre>
+  </li>
+  <li>
+    <strong>Explanation:</strong> (Sample explanation provided in the problem statement)
+  </li>
+</ul>
+
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CANDY123">Bear and Candies 123 Problem Description</a>.</p>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/12_candies_game_problem_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/12_candies_game_problem_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/12_candies_game_problem_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/12_candies_game_problem_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+<pre>
+  <code>
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int A, B;
+        cin >> A >> B;
+        int moves = 1;
+        while (true) {
+            if (moves % 2 == 1) {
+                A -= moves;
+                if (A < 0) {
+                    cout << "Bob" << endl;
+                    break;
+                }
+            } else {
+                B -= moves;
+                if (B < 0) {
+                    cout << "Limak" << endl;
+                    break;
+                }
+            }
+            moves++;
+        }
+    }
+    return 0;
+}
+  </code>
+</pre>
+<img src="assets/day12_image_Intermediate.jpg" alt="Day 12 Image Intermediate">
+</ol>
+</details>
+
 <!--Day - 13-->
 <!--Day - 14-->
 <!--Day - 15-->
