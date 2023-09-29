@@ -1,7 +1,8 @@
 name: Add contributors
 on:
   schedule:
-    - cron:  '0 7 * * *'
+    # Runs at midnight (00:00) UTC every Saturday
+    - cron:  '0 0 * * 6'
 # push:
 #   branches:
 #     - master
