@@ -23,6 +23,37 @@
 <!--ACC45DAYSOFCODE-2023-->
 <h1>ACC45DAYSOFCODE-2023</h1>
 
+<!--Table-->
+| Days and Level | Cpp | Python | JavaScript | Golang |
+| :-: | :-: | :-: | :-: | :-: |
+| [Day - 01 - Beginner](#day-01) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 02 - Beginner]((#day-02)) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 03 - Beginner](#day-03) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 04 - Beginner](#day-04---beginner) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 04 - Intermediate](#day-04---intermediate) | ✅ | ✅ | ❌ | ❌ |
+| [Day - 05 - Beginner](#day-05---beginner) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 05 - Intermediate](#day-05---intermediate) | ✅ | ✅ | ❌ | ✅ |
+| [Day - 06 - Beginner](#day-06---beginner) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 06 - Intermediate](#day-06---intermediate) | ❌ | ❌ | ❌ | ❌ |
+| [Day - 07 - Beginner](#day-07---beginner) | ✅ | ❌  | ❌ | ❌ |
+| [Day - 07 - Intermediate](#day-07---intermediate) | ❌ | ❌ | ❌ | ❌ |
+| [Day - 08 - Beginner](#day-08---beginner) | ✅ | ✅ | ❌ | ✅ |
+| [Day - 08 - Intermediate](#day-08---intermediate) | ✅ | ✅ | ❌ | ❌ |
+| [Day - 09 - Beginner](#day-09---beginner) | ❌ | ❌ | ❌ | ❌ |
+| [Day - 09 - Intermediate](#day-09---intermediate) | ✅ | ❌ | ❌ | ✅ |
+| [Day - 10 - Beginner](#day-10---beginner) | ✅ | ✅ | ❌ | ✅ |
+| [Day - 10 - Intermediate](#day-10---intermediate) | ✅ | ✅ | ❌ | ✅ |
+| [Day - 11 - Beginner](#day-11---beginner) | ❌ | ❌ | ❌ | ❌ |
+| [Day - 11 - Intermediate](#day-11---intermediate) | ✅ | ✅ | ❌ | ❌ |
+| [Day - 12 - Beginner](#day-12---beginner) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 12 - Intermediate](#day-12---intermediate) | ✅ | ✅ | ❌ | ✅ |
+
+<br>
+
+---
+
+<br>
+
 <!--Day - 01-->
 <h2>Day-01</h2>
 <details>
@@ -623,7 +654,7 @@ for _ in range(t):
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 
 ```python
-  t = int(input())
+t = int(input())
 for _ in range(t):
     n = int(input())
     print((n + 1) // 2)
