@@ -1,4 +1,4 @@
-name: C++ CI
+name: C++ Programs Check
 
 on:
   push:
