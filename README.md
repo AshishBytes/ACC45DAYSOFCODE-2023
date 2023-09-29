@@ -26,29 +26,29 @@
 <!--Table-->
 <h2>Progress table</h2>
 
-| Days and Level | Cpp | Python | JavaScript | Golang |
-| :-: | :-: | :-: | :-: | :-: |
-| [Day - 01 - Beginner](#day-01) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 02 - Beginner](#day-02)) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 03 - Beginner](#day-03) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 04 - Beginner](#day-04---beginner) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 04 - Intermediate](#day-04---intermediate) | ✅ | ✅ | ❌ | ❌ |
-| [Day - 05 - Beginner](#day-05---beginner) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 05 - Intermediate](#day-05---intermediate) | ✅ | ✅ | ❌ | ✅ |
-| [Day - 06 - Beginner](#day-06---beginner) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 06 - Intermediate](#day-06---intermediate) | ❌ | ❌ | ❌ | ❌ |
-| [Day - 07 - Beginner](#day-07---beginner) | ✅ | ❌  | ❌ | ❌ |
-| [Day - 07 - Intermediate](#day-07---intermediate) | ❌ | ❌ | ❌ | ❌ |
-| [Day - 08 - Beginner](#day-08---beginner) | ✅ | ✅ | ❌ | ✅ |
-| [Day - 08 - Intermediate](#day-08---intermediate) | ✅ | ✅ | ❌ | ❌ |
-| [Day - 09 - Beginner](#day-09---beginner) | ❌ | ❌ | ❌ | ❌ |
-| [Day - 09 - Intermediate](#day-09---intermediate) | ✅ | ❌ | ❌ | ✅ |
-| [Day - 10 - Beginner](#day-10---beginner) | ✅ | ✅ | ❌ | ✅ |
-| [Day - 10 - Intermediate](#day-10---intermediate) | ✅ | ✅ | ❌ | ✅ |
-| [Day - 11 - Beginner](#day-11---beginner) | ❌ | ❌ | ❌ | ❌ |
-| [Day - 11 - Intermediate](#day-11---intermediate) | ✅ | ✅ | ❌ | ❌ |
-| [Day - 12 - Beginner](#day-12---beginner) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 12 - Intermediate](#day-12---intermediate) | ✅ | ✅ | ❌ | ✅ |
+|                  Days and Level                   | Cpp | Python | JavaScript | Golang |
+| :-----------------------------------------------: | :-: | :----: | :--------: | :----: |
+|          [Day - 01 - Beginner](#day-01)           | ✅  |   ✅   |     ✅     |   ✅   |
+|          [Day - 02 - Beginner](#day-02))          | ✅  |   ✅   |     ✅     |   ✅   |
+|          [Day - 03 - Beginner](#day-03)           | ✅  |   ✅   |     ✅     |   ✅   |
+|     [Day - 04 - Beginner](#day-04---beginner)     | ✅  |   ✅   |     ✅     |   ✅   |
+| [Day - 04 - Intermediate](#day-04---intermediate) | ✅  |   ✅   |     ❌     |   ❌   |
+|     [Day - 05 - Beginner](#day-05---beginner)     | ✅  |   ✅   |     ✅     |   ✅   |
+| [Day - 05 - Intermediate](#day-05---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
+|     [Day - 06 - Beginner](#day-06---beginner)     | ✅  |   ✅   |     ✅     |   ✅   |
+| [Day - 06 - Intermediate](#day-06---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 07 - Beginner](#day-07---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 07 - Intermediate](#day-07---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 08 - Beginner](#day-08---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
+| [Day - 08 - Intermediate](#day-08---intermediate) | ✅  |   ✅   |     ❌     |   ❌   |
+|     [Day - 09 - Beginner](#day-09---beginner)     | ❌  |   ❌   |     ❌     |   ❌   |
+| [Day - 09 - Intermediate](#day-09---intermediate) | ✅  |   ❌   |     ❌     |   ✅   |
+|     [Day - 10 - Beginner](#day-10---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
+| [Day - 10 - Intermediate](#day-10---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
+|     [Day - 11 - Beginner](#day-11---beginner)     | ❌  |   ❌   |     ❌     |   ❌   |
+| [Day - 11 - Intermediate](#day-11---intermediate) | ✅  |   ✅   |     ❌     |   ❌   |
+|     [Day - 12 - Beginner](#day-12---beginner)     | ✅  |   ✅   |     ✅     |   ✅   |
+| [Day - 12 - Intermediate](#day-12---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
 
 <br>
 
@@ -66,24 +66,27 @@
 Chef drank X ml of water today. Determine if Chef followed the doctor's advice or not.
 
 <code>Input Format</code>:
+
 - The first line contains a single integer T — the number of test cases. Then the test cases follow.
 - The first and only line of each test case contains one integer X — the amount of water Chef drank today.
-<code>Output Format</code>:
+  <code>Output Format</code>:
 - For each test case, output YES if Chef followed the doctor's advice of drinking at least 2000 ml of water. Otherwise, output NO.
 
 - You may print each character of the string in uppercase or lowercase (for example, the strings YES, yEs, yes, and yeS will all be treated as identical).
 
 <code>Constraints</code>:
+
 - 1 <= T <= 2000
 - 1 <= X <= 4000
 
 <code>Explanation</code>:
 Test case 1: Chef followed the doctor's advice since he drank 2999 ml of water which is >=2000 ml.
 
-Test case 2: Chef did not follow the doctor's advice since he drank 
+Test case 2: Chef did not follow the doctor's advice since he drank
 1450 ml of water which is < 2000 ml.
 
 Test case 3: Chef followed the doctor's advice since he drank 2000 ml of water which is >= 2000 ml.</li>
+
 </ul>
 </div>
 <p>For more details, You can find the full problem description on CodeChef's website:
@@ -112,6 +115,8 @@ for _ in range(T):
 <img src="assets/day01_image.jpg" alt="Day 01 Image">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -197,6 +202,8 @@ func main() {
 </details>
 <br>
 
+[🔝 Back to Table](#progress-table)
+
 ---
 
 <br>
@@ -257,7 +264,6 @@ func main() {
 <a href="https://www.codechef.com/problems/CHAIRS_">Chairs Requirement Problem Description</a>.</p>
 </details>
 
-
 <h2>Solution/Codes</h2>
 <li><a href="C++/03_chair_distribution.cpp"><code>C++</code></a></li>
 <li><a href="Python/03_chair_distribution.py"><code>Python</code></a></li>
@@ -266,40 +272,40 @@ func main() {
 <p>Here's an example of using the <code>JavaScript</code> programming language:</p>
 
 ```js
-const readline = require('readline');
+const readline = require("readline");
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+  input: process.stdin,
+  output: process.stdout,
 });
 
 let T;
 let testCases = [];
 
-rl.question('', (t) => {
-    T = parseInt(t);
-    readInput();
+rl.question("", (t) => {
+  T = parseInt(t);
+  readInput();
 });
 
 function readInput() {
-    if (testCases.length < T) {
-        rl.question('', (input) => {
-            const [X, Y] = input.split(' ').map(Number);
-            testCases.push({ X, Y });
-            readInput();
-        });
-    } else {
-        processInput();
-    }
+  if (testCases.length < T) {
+    rl.question("", (input) => {
+      const [X, Y] = input.split(" ").map(Number);
+      testCases.push({ X, Y });
+      readInput();
+    });
+  } else {
+    processInput();
+  }
 }
 
 function processInput() {
-    for (let i = 0; i < T; i++) {
-        const { X, Y } = testCases[i];
-        const extraChairs = Math.max(0, X - Y);
-        console.log(extraChairs);
-    }
-    rl.close();
+  for (let i = 0; i < T; i++) {
+    const { X, Y } = testCases[i];
+    const extraChairs = Math.max(0, X - Y);
+    console.log(extraChairs);
+  }
+  rl.close();
 }
 ```
 
@@ -308,6 +314,8 @@ function processInput() {
 <img src="assets/day03_image.jpg" alt="Day 03 Image">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -408,8 +416,13 @@ int main() {
 <summary>Images</summary>
 <img src="assets/day04_image_beginner.jpg" alt="Day 04 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-04 - Intermediate</h2>
 <details>
@@ -504,10 +517,11 @@ int main() {
 </details>
 <br>
 
+[🔝 Back to Table](#progress-table)
+
 ---
 
 <br>
-
 
 <!--Day - 05-->
 <!--Beginner-->
@@ -590,8 +604,13 @@ for _ in range(t):
 <summary>Images</summary>
 <img src="assets/day05_image_beginner.jpg" alt="Day 05 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-05 - Intermediate</h2>
 <details>
@@ -667,6 +686,8 @@ for _ in range(t):
 <img src="assets/day05_image_intermediate.jpg" alt="Day 05 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -764,8 +785,13 @@ func main() {
 <summary>Images</summary>
 <img src="assets/day06_image_beginner.jpg" alt="Day 06 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-06 - Intermediate</h2>
 <details>
@@ -845,9 +871,8 @@ func main() {
 <li><a href="Golang/06_rearrange_digits_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>JavaScript</code> programming language:</p>
 
-
 ```js
-    //❌
+//❌
 ```
 
 <details>
@@ -855,6 +880,8 @@ func main() {
 <img src="assets/day06_image_Intermediate.jpg" alt="Day 06 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -950,8 +977,13 @@ int main() {
 <summary>Images</summary>
 <img src="assets/day07_image_beginner.jpg" alt="Day 07 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-07 - Intermediate</h2>
 <details>
@@ -1018,9 +1050,8 @@ int main() {
 <li><a href="Golang/07_mayors_party_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 
-
 ```python
-    //❌ 
+    //❌
 ```
 
 <details>
@@ -1028,6 +1059,8 @@ int main() {
 <img src="assets/day07_image_Intermediate.jpg" alt="Day 07 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -1102,7 +1135,6 @@ int main() {
 <li><a href="Golang/08_geyser_bath_capacity_beginner.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Golang</code> programming language:</p>
 
-
 ```go
 package main
 
@@ -1124,8 +1156,13 @@ func main() {
 <summary>Images</summary>
 <img src="assets/day08_image_beginner.jpg" alt="Day 08 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-08 - Intermediate</h2>
 <details>
@@ -1225,6 +1262,8 @@ for _ in range(T):
 </details>
 <br>
 
+[🔝 Back to Table](#progress-table)
+
 ---
 
 <br>
@@ -1301,15 +1340,20 @@ for _ in range(T):
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 
 ```Python
-    //❌ 
+    //❌
 ```
 
 <details>
 <summary>Images</summary>
 <img src="assets/day09_image_beginner.jpg" alt="Day 09 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-09 - Intermediate</h2>
 <details>
@@ -1386,12 +1430,12 @@ func main() {
             fmt.Scan(&A[i])
         }
         fmt.Scan(&P)
-        
+
         totalHours := 0
         for i := 0; i < 5; i++ {
             totalHours += A[i]
         }
-        
+
         if totalHours * P > 120 {
             fmt.Println("Yes")
         } else {
@@ -1406,6 +1450,8 @@ func main() {
 <img src="assets/day09_image_Intermediate.jpg" alt="Day 09 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -1501,8 +1547,13 @@ int main() {
 <summary>Images</summary>
 <img src="assets/day10_image_beginner.jpg" alt="Day 10 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-10 - Intermediate</h2>
 <details>
@@ -1572,7 +1623,6 @@ int main() {
 <li><a href="Golang/10_flight_baggage_problem_Intermediate.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
 
-
 ```cpp
 #include <iostream>
 using namespace std;
@@ -1598,6 +1648,8 @@ int main() {
 <img src="assets/day10_image_Intermediate.jpg" alt="Day 10 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -1675,7 +1727,6 @@ int main() {
 <li><a href="Golang/11_cricket_match_beginner.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>C++</code> programming language:</p>
 
-
 ```cpp
     //❌
 ```
@@ -1684,8 +1735,13 @@ int main() {
 <summary>Images</summary>
 <img src="assets/day11_image_beginner.jpg" alt="Day 11 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-11 - Intermediate</h2>
 <details>
@@ -1772,6 +1828,8 @@ int main() {
 <img src="assets/day11_image_Intermediate.jpg" alt="Day 11 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
@@ -1870,8 +1928,13 @@ int main() {
 <summary>Images</summary>
 <img src="assets/day12_image_beginner.jpg" alt="Day 12 Image Beginner">
 </details>
+<br>
 
+[🔝 Back to Table](#progress-table)
 
+---
+
+<br>
 <!--Intermediate-->
 <h2>Day-12 - Intermediate</h2>
 <details>
@@ -1977,6 +2040,8 @@ int main() {
 <img src="assets/day12_image_Intermediate.jpg" alt="Day 12 Image Intermediate">
 </details>
 <br>
+
+[🔝 Back to Table](#progress-table)
 
 ---
 
