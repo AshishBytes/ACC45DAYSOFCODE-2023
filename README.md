@@ -1,30 +1,21 @@
 <!--Header-->
-<h1 align="center">
-  <br>
-  ACC 45 days of code  challenge
-  <br>
-</h1>
+<img src="https://www.amity.edu/gwalior/images/logo.webp"/>
 
-<h3 align=center>This is my 45 days of code challenge repository organize by Amity Coding Club that is official club of <a href=https://www.amity.edu/gwalior>Amity University Gwalior</a></h3>
-
-<div align=center>
-
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=Gmail&logoColor=white)](mailto:ashishlodhi5559@gmail.com)
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ashish-singh-821a0a24b/)
-[![discord](https://img.shields.io/badge/discord-000000?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/175010396384657408)
-[![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?style=for-the-badge&logo=YouTube&logoColor=white)](https://www.youtube.com/@ashishlodhi837)
-[![instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/itz_ash._u/)
-[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/itz_ash_u?t=AuUCwyT_PRh5BMIV1Ssn0A&s=08)
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](http://t.me/itzz_ash_u)
-[![Snapchat](https://img.shields.io/badge/Snapchat-%23FFFC00.svg?style=for-the-badge&logo=Snapchat&logoColor=white)](https://www.snapchat.com/add/itz_ashu59?share_id=mkKck5WkB9A&locale=en-US)
-
-</div>
+---
 
 <!--ACC45DAYSOFCODE-2023-->
 <h1>ACC45DAYSOFCODE-2023</h1>
 
+> This is my 45 days of code challenge repository organize by Amity Coding Club that is official club of <a href=https://www.amity.edu/gwalior>Amity University Gwalior</a>
+
 <!--Table-->
 <h2>Progress table</h2>
+
+#### **Contributing:**
+
+Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) first. Thanks to all [contributors](https://github.com/AshishBytes/ACC45DAYSOFCODE-2023/graphs/contributors); you rock!
+
+---
 
 |                  Days and Level                   | Cpp | Python | JavaScript | Golang |
 | :-----------------------------------------------: | :-: | :----: | :--------: | :----: |
@@ -2082,3 +2073,5 @@ int main() {
 <!--Day - 45-->
 </ol>
 </details>
+
+### Contributors
