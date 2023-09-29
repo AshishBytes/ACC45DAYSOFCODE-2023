@@ -24,10 +24,12 @@
 <h1>ACC45DAYSOFCODE-2023</h1>
 
 <!--Table-->
+<h2>Progress table</h2>
+
 | Days and Level | Cpp | Python | JavaScript | Golang |
 | :-: | :-: | :-: | :-: | :-: |
 | [Day - 01 - Beginner](#day-01) | ✅ | ✅ | ✅ | ✅ |
-| [Day - 02 - Beginner]((#day-02)) | ✅ | ✅ | ✅ | ✅ |
+| [Day - 02 - Beginner](#day-02)) | ✅ | ✅ | ✅ | ✅ |
 | [Day - 03 - Beginner](#day-03) | ✅ | ✅ | ✅ | ✅ |
 | [Day - 04 - Beginner](#day-04---beginner) | ✅ | ✅ | ✅ | ✅ |
 | [Day - 04 - Intermediate](#day-04---intermediate) | ✅ | ✅ | ❌ | ❌ |
