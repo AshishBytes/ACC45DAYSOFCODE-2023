@@ -2039,6 +2039,119 @@ int main() {
 <br>
 
 <!--Day - 13-->
+<h2>Day-13 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef is currently working for a secret research group called NEXTGEN. While the rest of the world is still in search of a way to utilize Helium-3 as a fuel, NEXTGEN scientists have been able to achieve 2 major milestones:
+    <ol>
+      <li>Finding a way to make a nuclear reactor that will be able to utilize Helium-3 as a fuel</li>
+      <li>Obtaining every bit of Helium-3 from the moon's surface</li>
+    </ol>
+    Moving forward, the project requires some government funding for completion, which comes under one condition: to prove its worth, the project should power Chefland by generating at least A units of power each year for the next B years.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input contains an integer T, the number of testcases. The description of T test cases follows. Each test case consists of a single line of input, containing four space-separated integers A, B, X, Y respectively.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case print on a single line the answer — Yes if NEXTGEN satisfies the government's minimum requirements for funding and No otherwise. You may print each character of the answer string in either uppercase or lowercase (for example, the strings "yEs", "yes", "Yes" and "YES" will all be treated as identical).
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ A, B, X, Y ≤ 1000</li>
+    </ul>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/HELIUM3">Chef and NextGen Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/13_nextgen_funding_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/13_nextgen_funding_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/13_nextgen_funding_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/13_nextgen_funding_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+t = int(input())
+for _ in range(t):
+    a, b, x, y = map(int, input().split())
+    if a * b <= x * y:
+        print("Yes")
+    else:
+        print("No")
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day13_image_beginner.jpg" alt="Day 13 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+
+<!--Intermediate-->
+<h2>Day-13 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef is working on a project for NEXTGEN. They need to power Chefland by generating at least A units of power each year for the next B years using Helium-3 from the moon.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line contains an integer T, the number of test cases. Each test case contains four space-separated integers A, B, X, and Y.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, print "Yes" if the project can generate enough power, or "No" otherwise.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ A, B, X, Y ≤ 1000</li>
+    </ul>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/ODDPAIRS">Odd Pairs Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/13_count_pairs_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/13_count_pairs_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/13_count_pairs_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/13_count_pairs_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // ❌
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day13_image_Intermediate.jpg" alt="Day 13 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 14-->
 <!--Day - 15-->
 <!--Day - 16-->
