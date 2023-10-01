@@ -40,6 +40,10 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 | [Day - 11 - Intermediate](#day-11---intermediate) | ✅  |   ✅   |     ❌     |   ❌   |
 |     [Day - 12 - Beginner](#day-12---beginner)     | ✅  |   ✅   |     ✅     |   ✅   |
 | [Day - 12 - Intermediate](#day-12---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
+|     [Day - 13 - Beginner](#day-13---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
+| [Day - 13 - Intermediate](#day-13---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 14 - Beginner](#day-14---beginner)     | ❌  |   ❌   |     ❌     |   ❌   |
+| [Day - 14 - Intermediate](#day-14---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
 
 <br>
 
@@ -2100,7 +2104,6 @@ for _ in range(t):
 
 <br>
 
-
 <!--Intermediate-->
 <h2>Day-13 - Intermediate</h2>
 <details>
@@ -2204,7 +2207,6 @@ for _ in range(t):
 
 <br>
 
-
 <!--Intermediate-->
 <h2>Day-14 - Intermediate</h2>
 <details>
@@ -2257,7 +2259,7 @@ for _ in range(t):
 <h2>Solution/Codes</h2>
 <li><a href="C++/14_friends_and_money_Intermediate.cpp"><code>C++</code></a></li>
 <li><a href="Python/14_friends_and_money_Intermediate.py"><code>Python</code></a></li>
-<li><a href="JavaScript/14_friends_and_money_Intermediate.js"><code>JavaScript</code></a></li>
+<li><a href="JavaScript/14_friends_and_money_Intermediate.js"><code>❌ JavaScript</code></a></li>
 <li><a href="Golang/14_friends_and_money_Intermediate.go"><code>Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 
