@@ -2153,6 +2153,148 @@ for _ in range(t):
 <br>
 
 <!--Day - 14-->
+<!--Beginner-->
+<h2>Day-14 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef is currently standing at stair 0 and he wants to reach stair numbered X.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input will contain a single integer T, denoting the number of test cases. Each test case consists of a single line of input containing two space-separated integers X and Y denoting the number of stairs Chef wants to reach and the number of stairs he can climb in one move.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output the minimum number of moves required by him to reach exactly the stair numbered X.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 500</li>
+      <li>1 ≤ X, Y ≤ 100</li>
+    </ul>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/XJUMP">X Jumps Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/14_chef_stairs_beginner.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/14_chef_stairs_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/14_chef_stairs_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/14_chef_stairs_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+
+```cpp
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day14_image_beginner.jpg" alt="Day 14 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+
+<!--Intermediate-->
+<h2>Day-14 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> There are three friends; let's call them A, B, C. They made the following statements:
+    <ul>
+      <li>A: "I have x Rupees more than B."</li>
+      <li>B: "I have y rupees more than C."</li>
+      <li>C: "I have z rupees more than A."</li>
+    </ul>
+    You do not know the exact values of x, y, z. Instead, you are given their absolute values, i.e., |X|=|x|, |Y|=|y|, and |Z|=|z|. Note that x, y, z may be negative; "having -x rupees more" is the same as "having x rupees less".
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of the input contains a single integer T denoting the number of test cases. The description of T test cases follows. The first and only line of each test case contains three space-separated integers X, Y, and Z.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, print a single line containing the string "yes" if the presented scenario is possible or "no" otherwise (without quotes).
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1,000</li>
+      <li>1 ≤ X, Y, Z ≤ 1,000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample:</strong>
+    <pre>
+    Input
+    2
+    1 2 1
+    1 1 1
+    Output
+    yes
+    no
+    </pre>
+    <p>Explanation:</p>
+    <p>Example 1: One possible way to satisfy all conditions is: A has 10 rupees, B has 9 rupees, and C has 11 rupees. Therefore, we have x=1, y=-2, z=1.</p>
+    <p>Example 2: There is no way for all conditions to be satisfied.</p>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/THREEFR">Three Friends Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/14_friends_and_money_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/14_friends_and_money_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/14_friends_and_money_Intermediate.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/14_friends_and_money_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var T int
+    fmt.Scan(&T)
+    for i := 0; i < T; i++ {
+        var X, Y, Z int
+        fmt.Scan(&X, &Y, &Z)
+        if X == Y+Z || Y == Z+X || Z == X+Y {
+            fmt.Println("yes")
+        } else {
+            fmt.Println("no")
+        }
+    }
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day14_image_Intermediate.jpg" alt="Day 14 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 15-->
 <!--Day - 16-->
 <!--Day - 17-->
