@@ -3,21 +3,23 @@ package main
 import "fmt"
 
 func main() {
-    var t, n int
-    fmt.Scan(&t)
-    for i := 0; i < t; i++ {
-        fmt.Scan(&n)
-        fmt.Println((n + 1) / 2)
-    }
+	var t, n int
+	fmt.Scan(&t)
+	for i := 0; i < t; i++ {
+		fmt.Scan(&n)
+		fmt.Println((n + 1) / 2)
+	}
 }
 
 /**********************************************************
  * @INFO
  * Code by Ashish Singh
  * @INFO
+ * Gmail - ashishlodhi5559@gmail.com
+ * @INFO
  * Github - AshishBytes
  * @INFO
- * Gmail - ashishlodhi5559@gmail.com
+ * LinkedIn - ashishbytes
  * @INFO
  * Instagram - @itz_ash._u
  * @INFO

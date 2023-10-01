@@ -1,49 +1,51 @@
-const readline = require('readline');
+const readline = require("readline");
 
 const rl = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
+  input: process.stdin,
+  output: process.stdout,
 });
 
 let t;
 let testCases = [];
 
-rl.question('', (input) => {
-    t = parseInt(input);
-    readInput();
+rl.question("", (input) => {
+  t = parseInt(input);
+  readInput();
 });
 
 function readInput() {
-    if (testCases.length < t) {
-        rl.question('', (input) => {
-            const [x, y] = input.split(' ').map(Number);
-            testCases.push({ x, y });
-            readInput();
-        });
-    } else {
-        processInput();
-    }
+  if (testCases.length < t) {
+    rl.question("", (input) => {
+      const [x, y] = input.split(" ").map(Number);
+      testCases.push({ x, y });
+      readInput();
+    });
+  } else {
+    processInput();
+  }
 }
 
 function processInput() {
-    for (let i = 0; i < t; i++) {
-        const { x, y } = testCases[i];
-        if (x >= y) {
-            console.log(y);
-        } else {
-            console.log(x + 2 * (y - x));
-        }
+  for (let i = 0; i < t; i++) {
+    const { x, y } = testCases[i];
+    if (x >= y) {
+      console.log(y);
+    } else {
+      console.log(x + 2 * (y - x));
     }
-    rl.close();
+  }
+  rl.close();
 }
 
 /**********************************************************
  * @INFO
  * Code by Ashish Singh
  * @INFO
+ * Gmail - ashishlodhi5559@gmail.com
+ * @INFO
  * Github - AshishBytes
  * @INFO
- * Gmail - ashishlodhi5559@gmail.com
+ * LinkedIn - ashishbytes
  * @INFO
  * Instagram - @itz_ash._u
  * @INFO
