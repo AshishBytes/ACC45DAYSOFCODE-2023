@@ -27,9 +27,11 @@ For C++, JavaScript, and Golang:
  * @INFO
  * Code by [Your Name]
  * @INFO
+ * Gmail - [Your Email]
+ * @INFO
  * Github - [Your GitHub Username]
  * @INFO
- * Gmail - [Your Email]
+ * LinkedIn - [Your GitHub Username]
  * @INFO
  * Instagram - [Your Instagram Handle]
  * @INFO
@@ -44,9 +46,11 @@ For Python:
 # @INFO
 # Code by [Your Name]
 # @INFO
+# Gmail - [Your Email]
+# @INFO
 # Github - [Your GitHub Username]
 # @INFO
-# Gmail - [Your Email]
+# LinkedIn - [Your LinkedIn Profile]
 # @INFO
 # Instagram - [Your Instagram Handle]
 # @INFO
