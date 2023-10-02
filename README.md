@@ -44,6 +44,8 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 | [Day - 13 - Intermediate](#day-13---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 |     [Day - 14 - Beginner](#day-14---beginner)     | ❌  |   ❌   |     ❌     |   ❌   |
 | [Day - 14 - Intermediate](#day-14---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
+|     [Day - 15 - Beginner](#day-15---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
+| [Day - 15 - Intermediate](#day-15---intermediate) | ✅  |   ❌   |     ❌     |   ✅   |
 
 <br>
 
@@ -2298,6 +2300,188 @@ func main() {
 <br>
 
 <!--Day - 15-->
+<!--Beginner-->
+<h2>Day-15 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> There are N cards on a table, out of which X cards are face-up and the remaining are face-down. In one operation, we can do the following: Select any one card and flip it (i.e., if it was initially face-up, after the operation, it will be face-down and vice versa). What is the minimum number of operations we must perform so that all the cards face in the same direction (i.e., either all are face-up or all are face-down)?
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line contains a single integer T — the number of test cases. Then the test cases follow. The first and only line of each test case contains two space-separated integers N and X — the total number of cards and the number of cards which are initially face-up.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output the minimum number of cards you must flip so that all the cards face in the same direction.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 5000</li>
+      <li>2 ≤ N ≤ 100</li>
+      <li>0 ≤ X ≤ N</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample:</strong>
+    <pre>
+    Input
+    4
+    5 0
+    4 2
+    3 3
+    10 2
+
+    Output
+    0
+    2
+    0
+    2
+    </pre>
+    <p>Explanation:</p>
+    <p>Test Case 1: All the cards are already facing down. Therefore we do not need to perform any operations.</p>
+    <p>Test Case 2: 2 cards are facing up and 2 cards are facing down. Therefore we can flip the 2 cards which are initially facing down.</p>
+    <p>Test Case 3: All the cards are already facing up. Therefore we do not need to perform any operations.</p>
+    <p>Test Case 4: 2 cards are facing up and 8 cards are facing down. Therefore we can flip the 2 cards which are initially facing up.</p>
+
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/FLIPCARDS">Flip the cards Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/115_card_flipping_beginner5_card_flipping_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/15_card_flipping_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/15_card_flipping_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/15_card_flipping_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int N, X;
+        cin >> N >> X;
+        int flips = min(X, N - X);
+        cout << flips << endl;
+    }
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day15_image_beginner.jpg" alt="Day 15 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+<!--Intermediate-->
+<h2>Day-15 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Well-known investigative reporter Kim "Sherlock" Bumjun needs your help! Today, his mission is to sabotage the operations of the evil JSA. If the JSA is allowed to succeed, they will use the combined power of the WQS binary search and the UFDS to take over the world! But Kim doesn't know where the base is located. He knows that the base is on the highest peak of the Himalayan Mountains. He also knows the heights of each of the N mountains. Can you help Kim find the height of the mountain where the base is located?
+  </li>
+  <li>
+    <strong>Input Format:</strong> First line will contain T, the number of test cases. Then the test cases follow. The first line in each testcase contains one integer, N. The following N lines of each test case each contain one integer: the height of a new mountain.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each testcase, output one line with one integer: the height of the tallest mountain for that test case.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 10</li>
+      <li>1 ≤ N ≤ 100000</li>
+      <li>0 ≤ height of each mountain ≤ 10^9</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Subtasks:</strong>
+    <ul>
+      <li>100 points: No additional constraints.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    1
+    5
+    4
+    7
+    6
+    3
+    1
+    7
+    </pre>
+    <p>Output</p>
+    <pre>
+    7
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/UWCOI20A">Peak Finding Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/15_himalayan_mountains_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/15_himalayan_mountains_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/15_himalayan_mountains_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/15_himalayan_mountains_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int N;
+        cin >> N;
+        int tallest = -1;
+        for (int i = 0; i < N; i++) {
+            int height;
+            cin >> height;
+            tallest = max(tallest, height);
+        }
+        cout << tallest << endl;
+    }
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day15_image_Intermediate.jpg" alt="Day 15 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 16-->
 <!--Day - 17-->
 <!--Day - 18-->
