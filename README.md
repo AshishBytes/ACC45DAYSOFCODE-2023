@@ -46,6 +46,8 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 | [Day - 14 - Intermediate](#day-14---intermediate) | ✅  |   ✅   |     ❌     |   ✅   |
 |     [Day - 15 - Beginner](#day-15---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
 | [Day - 15 - Intermediate](#day-15---intermediate) | ✅  |   ❌   |     ❌     |   ✅   |
+|     [Day - 16 - Beginner](#day-16---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
+| [Day - 16 - Intermediate](#day-16---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 
 <br>
 
@@ -2483,6 +2485,166 @@ int main() {
 <br>
 
 <!--Day - 16-->
+<!--Beginner-->
+<h2>Day-16 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef has N candies. He has to distribute them to exactly M of his friends such that each friend gets an equal number of candies, and each friend gets an even number of candies. Determine whether it is possible to do so.
+  </li>
+  <li>
+    <strong>Input Format:</strong> First line will contain T, the number of test cases. Then the test cases follow. Each test case consists of a single line of input, two integers N and M, the number of candies and the number of friends.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, the output will consist of a single line containing "Yes" if Chef can distribute the candies as per the conditions and "No" otherwise. You may print each character of the string in uppercase or lowercase (for example, the strings "yes," "Yes," "yEs," and "YES" will all be treated as identical).
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ N, M ≤ 1000</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    4
+    9 3
+    4 1
+    4 2
+    8 3
+    </pre>
+    <p>Output</p>
+    <pre>
+    No
+    Yes
+    Yes
+    No
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CANDYDIST">Candy Distribution Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/16_candy_distribution_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/16_candy_distribution_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/16_candy_distribution_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/16_candy_distribution_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Golang</code> programming language:</p>
+
+```go
+package main
+
+import (
+    "fmt"
+)
+
+func main() {
+    var T int
+    fmt.Scan(&T)
+    for i := 0; i < T; i++ {
+        var N, M int
+        fmt.Scan(&N, &M)
+        if N%(2*M) == 0 {
+            fmt.Println("Yes")
+        } else {
+            fmt.Println("No")
+        }
+    }
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day16_image_beginner.jpg" alt="Day 16 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+<!--Intermediate-->
+<h2>Day-16 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef has a total of N (N≥4) chocolates. He decided to distribute them into three jars such that:
+    <ul>
+      <li>At least one jar has an odd number of chocolates.</li>
+      <li>Exactly two jars have the same number of chocolates.</li>
+      <li>Every jar has at least one chocolate.</li>
+    </ul>
+    Find a valid distribution of chocolates for Chef.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input will contain a single integer T, denoting the number of test cases. Each test case consists of a single integer N — the total number of chocolates.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output on a new line, three space-separated integers denoting the number of chocolates in each jar after distribution.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 10^5</li>
+      <li>4 ≤ N ≤ 10^5</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    3
+    4
+    7
+    11
+    </pre>
+    <p>Output</p>
+    <pre>
+    1 1 2
+    1 3 3
+    1 5 5
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CHOCOCHEF">Chocolate Distribution Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/16_chocolates_distribution_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/16_chocolates_distribution_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/16_chocolates_distribution_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/16_chocolates_distribution_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```Cpp
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day16_image_Intermediate.jpg" alt="Day 16 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 17-->
 <!--Day - 18-->
 <!--Day - 19-->
