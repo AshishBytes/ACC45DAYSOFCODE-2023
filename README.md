@@ -48,6 +48,10 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 | [Day - 15 - Intermediate](#day-15---intermediate) | ✅  |   ❌   |     ❌     |   ✅   |
 |     [Day - 16 - Beginner](#day-16---beginner)     | ✅  |   ✅   |     ❌     |   ✅   |
 | [Day - 16 - Intermediate](#day-16---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 17 - Beginner](#day-17---beginner)     | ❌  |   ❌   |     ❌     |   ❌   |
+| [Day - 17 - Intermediate](#day-17---intermediate) | ❌  |   ❌   |     ✅     |   ❌   |
+|     [Day - 18 - Beginner](#day-18---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 18 - Intermediate](#day-18---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 
 <br>
 
@@ -2645,8 +2649,357 @@ func main() {
 
 <br>
 
-<!--Day - 17-->
+<!--Day - 17--><!--Beginner-->
+<h2>Day-17 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> There is a bus with 30 seats. The seats are numbered from 1 to 30, and the numbering is as depicted in this image.
+    <p>[Image depicting bus seat layout]</p>
+    As can be seen in the image, the bus is divided into two decks - The Lower deck, and the Upper deck, with 15 seats each. And some of the seats come as Single and some as Double. For example, Seats 1 and 2 are Double, whereas Seat 11 is a Single.
+    You will be given a Seat number, and your job is to classify it as one of these 4 types:
+    <ul>
+      <li>Lower Single</li>
+      <li>Lower Double</li>
+      <li>Upper Single</li>
+      <li>Upper Double</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input will contain a single integer T, denoting the number of test cases. Each test case consists of a single integer N — the seat number.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output on a new line, the type of seat.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 100</li>
+      <li>1 ≤ N ≤ 30</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    5
+    6
+    28
+    16
+    13
+    10
+    </pre>
+    <p>Output</p>
+    <pre>
+    Lower Double
+    Upper Single
+    Upper Double
+    Lower Single
+    Lower Double
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/SEATNUMBER">Bus Seat Numbering Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/17_bus_seat_classification_beginner.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/17_bus_seat_classification_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/17_bus_seat_classification_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/17_bus_seat_classification_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day17_image_beginner.jpg" alt="Day 17 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+<!--Intermediate-->
+<h2>Day-17 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> CodeChef offers a feature called streak count. A streak is maintained if you solve at least one problem daily. Om and Addy actively maintain their streaks on CodeChef. Over a span of N consecutive days, you have observed the count of problems solved by each of them. Your task is to determine the maximum streak achieved by Om and Addy and find who had the longer maximum streak.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input will contain a single integer T, denoting the number of test cases. Each test case consists of multiple lines of input. The first line of each test case contains an integer N — the number of days. The second line of each test case contains N space-separated integers, the ith of which is Ai, representing the problems solved by Om on the ith day. The third line of each test case contains N space-separated integers, the ith of which is Bi, representing the problems solved by Addy on the ith day.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output:
+    <ul>
+      <li>OM, if Om has a longer maximum streak than Addy;</li>
+      <li>ADDY, if Addy has a longer maximum streak than Om;</li>
+      <li>DRAW, if both have equal maximum streak.</li>
+    </ul>
+    You may print each character in uppercase or lowercase.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 10^5</li>
+      <li>1 ≤ N ≤ 10^5</li>
+      <li>0 ≤ Ai, Bi ≤ 10^9</li>
+      <li>The sum of N over all test cases won't exceed 6 * 10^5.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    3
+    6
+    1 7 3 0 2 13
+    0 2 3 4 5 0
+    3
+    1 3 4
+    3 1 2
+    5
+    1 2 3 0 1
+    1 2 0 2 3
+    </pre>
+    <p>Output</p>
+    <pre>
+    Addy
+    Draw
+    Om
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CS2023_STK">CodeChef Streak Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/17_streaks_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/17_streaks_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/17_streaks_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/17_streaks_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+def find_max_streak(N, om_solved, addy_solved):
+    om_streak = 0
+    addy_streak = 0
+    max_om_streak = 0
+    max_addy_streak = 0
+
+    for i in range(N):
+        if om_solved[i] > 0:
+            om_streak += 1
+        else:
+            om_streak = 0
+
+        if addy_solved[i] > 0:
+            addy_streak += 1
+        else:
+            addy_streak = 0
+
+        max_om_streak = max(max_om_streak, om_streak)
+        max_addy_streak = max(max_addy_streak, addy_streak)
+
+    if max_om_streak > max_addy_streak:
+        return "OM"
+    elif max_addy_streak > max_om_streak:
+        return "ADDY"
+    else:
+        return "DRAW"
+
+T = int(input())
+for _ in range(T):
+    N = int(input())
+    om_solved = list(map(int, input().split()))
+    addy_solved = list(map(int, input().split()))
+    result = find_max_streak(N, om_solved, addy_solved)
+    print(result)
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day17_image_Intermediate.jpg" alt="Day 17 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 18-->
+<!--Beginner-->
+<h2>Day-18 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Alice is playing Air Hockey with Bob. The first person to earn seven points wins the match. Currently, Alice's score is **A** and Bob's score is **B**.
+    Charlie is eagerly waiting for his turn. Help Charlie by calculating the minimum number of points that will be further scored in the match before it ends.
+  </li>
+  <li>
+    <strong>Input Format:</strong>
+    <ul>
+      <li>The first line of input will contain an integer **T** — the number of test cases. The description of **T** test cases follows.</li>
+      <li>The first and only line of each test case contains two space-separated integers **A** and **B**, as described in the problem statement.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Output Format:</strong>
+    <ul>
+      <li>For each test case, output on a new line the minimum number of points that will be further scored in the match before it ends.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ **T** ≤ 50</li>
+      <li>0 ≤ **A**, **B** ≤ 6</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample Input and Output:</strong>
+    <pre>
+    Input
+    4
+    0 0
+    2 5
+    5 2
+    4 3
+
+    Output
+    7
+    2
+    2
+    3
+    </pre>
+
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/AIRHOCKEY">Air Hockey Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/18_air_hockey_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/18_air_hockey_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/18_air_hockey_beginner.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/18_air_hockey_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    while (T--) {
+        int A, B;
+        cin >> A >> B;
+        cout << 7 - max(A, B) << endl;
+    }
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day18_image_beginner.jpg" alt="Day 18 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+<!--Intermediate-->
+<h2>Day-18 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> For a positive integer N, find the smallest integer X strictly greater than N such that digitSum(N) and digitSum(X) have different parity, i.e., one of them is odd, and the other is even.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line contains an integer T, the number of test cases. The description of the T test cases follows. Each test case consists of a single line of input with a single integer, the number N.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, print in a single line, an integer, the answer to the problem.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ N < 10^9</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    3
+    123
+    19
+    509
+    </pre>
+    <p>Output</p>
+    <pre>
+    124
+    21
+    511
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/DIGSMPAR">Digit Sum Parities Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/18_digitSum_Parity_Check_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/18_digitSum_Parity_Check_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/18_digitSum_Parity_Check_Intermediate.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/18_digitSum_Parity_Check_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day18_image_Intermediate.jpg" alt="Day 18 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 19-->
 <!--Day - 20-->
 <!--Day - 21-->

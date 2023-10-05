@@ -32,3 +32,20 @@ for _ in range(T):
     addy_solved = list(map(int, input().split()))
     result = find_max_streak(N, om_solved, addy_solved)
     print(result)
+
+
+##########################################################
+# @INFO
+# Code by Ashish Singh
+# @INFO
+# Gmail - ashishlodhi5559@gmail.com
+# @INFO
+# Github - AshishBytes
+# @INFO
+# LinkedIn - ashishbytes
+# @INFO
+# Instagram - @itz_ash._u
+# @INFO
+# Twitter - @itz_ash_u
+# @INFO
+##########################################################
