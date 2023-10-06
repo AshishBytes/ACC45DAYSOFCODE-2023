@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+int digitSum(int n) {
+    int sum = 0;
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int T;
+    std::cin >> T;
+    
+    while (T--) {
+        int N;
+        std::cin >> N;
+        
+        int X = N + 1;
+        while (true) {
+            int sum_N = digitSum(N);
+            int sum_X = digitSum(X);
+            
+            if (sum_N % 2 != sum_X % 2) {
+                std::cout << X << std::endl;
+                break;
+            }
+            
+            X++;
+        }
+    }
+    
+    return 0;
+}
