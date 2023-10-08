@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int w, x, y, z;
+        cin >> w >> x >> y >> z;
+
+        int final_balance = w + (x - y) * z;
+        cout << final_balance << endl;
+    }
+
+    return 0;
+}
