@@ -3096,6 +3096,7 @@ int main() {
 ```cpp
 #include <iostream>
 #include <string>
+using namespace std;
 
 int digitSum(int n) {
     int sum = 0;
@@ -3108,29 +3109,28 @@ int digitSum(int n) {
 
 int main() {
     int T;
-    std::cin >> T;
-
+    cin >> T;
+    
     while (T--) {
         int N;
-        std::cin >> N;
-
+        cin >> N;
+        
         int X = N + 1;
         while (true) {
             int sum_N = digitSum(N);
             int sum_X = digitSum(X);
-
+            
             if (sum_N % 2 != sum_X % 2) {
-                std::cout << X << std::endl;
+                cout << X << endl;
                 break;
             }
-
+            
             X++;
         }
     }
-
+    
     return 0;
 }
-
 ```
 
 <details>
