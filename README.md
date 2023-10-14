@@ -52,6 +52,12 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 | [Day - 17 - Intermediate](#day-17---intermediate) | ❌  |   ❌   |     ✅     |   ❌   |
 |     [Day - 18 - Beginner](#day-18---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
 | [Day - 18 - Intermediate](#day-18---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 19 - Beginner](#day-19---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 19 - Intermediate](#day-19---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 20 - Beginner](#day-20---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 20 - Intermediate](#day-20---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 21 - Beginner](#day-21---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 21 - Intermediate](#day-21---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 
 <br>
 
@@ -2148,7 +2154,7 @@ for _ in range(t):
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 
 ```python
-    // ❌
+    // Your_code_here
 ```
 
 <details>
@@ -2900,9 +2906,9 @@ for _ in range(T):
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/18_air_hockey_beginner.cpp"><code>C++</code></a></li>
-<li><a href="Python/18_air_hockey_beginner.py"><code>Python</code></a></li>
-<li><a href="JavaScript/18_air_hockey_beginner.js"><code>JavaScript</code></a></li>
-<li><a href="Golang/18_air_hockey_beginner.go"><code>Golang</code></a></li>
+<li><a href="Python/18_air_hockey_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/18_air_hockey_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/18_air_hockey_beginner.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Cpp</code> programming language:</p>
 
 ```cpp
@@ -2978,10 +2984,10 @@ int main() {
 </details>
 
 <h2>Solution/Codes</h2>
-<li><a href="C++/18_digitSum_Parity_Check_Intermediate.cpp"><code>C++</code></a></li>
-<li><a href="Python/18_digitSum_Parity_Check_Intermediate.py"><code>Python</code></a></li>
-<li><a href="JavaScript/18_digitSum_Parity_Check_Intermediate.js"><code>JavaScript</code></a></li>
-<li><a href="Golang/18_digitSum_Parity_Check_Intermediate.go"><code>Golang</code></a></li>
+<li><a href="C++/18_digitSum_Parity_Check_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/18_digitSum_Parity_Check_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/18_digitSum_Parity_Check_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/18_digitSum_Parity_Check_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Python</code> programming language:</p>
 
 ```python
@@ -3001,8 +3007,538 @@ int main() {
 <br>
 
 <!--Day - 19-->
+<!--Beginner-->
+<h2>Day-19 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>There is a contest containing</li>
+            <ul>
+                <li>2 problems A and B.</li>
+                <li>2 strong participants P and Q participated in the contest and solved both the problems.</li>
+                <li>P made AC submissions on problems A and B at time instants P_A and P_B respectively while Q made AC submissions on problems A and B at time instants Q_A and Q_B.</li>
+                <li>It is given that the time penalty is the minimum time instant at which a participant has solved both the problems. Also, the participant with the lower time penalty will have a better rank.</li>
+                <li>Determine which participant got the better rank or if there is a TIE.</li>
+            </ul>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>The first line will contain T, number of test cases. Then the test cases follow.</li>
+            <li>Each test case contains a single line of input, four integers P_A, P_B, Q_A, Q_B.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For each test case, output P if P got a better rank, Q if Q got a better rank, TIE otherwise.</li>
+            <li>Note that output is case-insensitive i.e. P and p both are considered the same.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>1 ≤ T ≤ 1000</li>
+            <li>1 ≤ P_A, P_B, Q_A, Q_B ≤ 100</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>4</li>
+            <li>5 10 2 12</li>
+            <li>10 30 15 15</li>
+            <li>20 8 4 20</li>
+            <li>6 6 6 6</li>
+            <li>P</li>
+            <li>Q</li>
+            <li>TIE</li>
+            <li>TIE</li>
+            <li>Explanation:</li>
+            <ul>
+                <li>Test Case 1:</li>
+                <ul>
+                    <li>Time penalty incurred by participant P = 10.</li>
+                    <li>Time penalty incurred by participant Q = 12.</li>
+                    <li>Since 10 < 12, P gets a better rank.</li>
+                </ul>
+                <li>Test Case 2:</li>
+                <ul>
+                    <li>Time penalty incurred by participant P = 30.</li>
+                    <li>Time penalty incurred by participant Q = 15.</li>
+                    <li>Since 15 < 30, Q gets a better rank.</li>
+                </ul>
+                <li>Test Case 3:</li>
+                <ul>
+                    <li>Time penalty incurred by participant P = 20.</li>
+                    <li>Time penalty incurred by participant Q = 20.</li>
+                    <li>Since 20 = 20, P and Q get the same rank (TIE).</li>
+                </ul>
+                <li>Test Case 4:</li>
+                <ul>
+                    <li>Time penalty incurred by participant P = 6.</li>
+                    <li>Time penalty incurred by participant Q = 6.</li>
+                    <li>Since 6 = 6, P and Q get the same rank (TIE).</li>
+                </ul>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/WINNERR">Determine the Winner Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/19_rank_comparison_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/19_rank_comparison_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/19_rank_comparison_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/19_rank_comparison_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>C++</code> programming language:</p>
+
+```cpp
+#include <iostream>
+#include <string>
+
+int digitSum(int n) {
+    int sum = 0;
+    while (n > 0) {
+        sum += n % 10;
+        n /= 10;
+    }
+    return sum;
+}
+
+int main() {
+    int T;
+    std::cin >> T;
+
+    while (T--) {
+        int N;
+        std::cin >> N;
+
+        int X = N + 1;
+        while (true) {
+            int sum_N = digitSum(N);
+            int sum_X = digitSum(X);
+
+            if (sum_N % 2 != sum_X % 2) {
+                std::cout << X << std::endl;
+                break;
+            }
+
+            X++;
+        }
+    }
+
+    return 0;
+}
+
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day19_image_beginner.jpg" alt="Day 19 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+<!--Intermediate-->
+<h2>Day-19 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>Ram wants to generate some prime numbers for his cryptosystem. Help him please! Your task is to generate all prime numbers between two given numbers.</li>
+            <li>Warning: large Input/Output data, be careful with certain languages (though most should be OK if the algorithm is well designed)</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>The first line contains t, the number of test cases (less than or equal to 10).</li>
+            <li>Followed by t lines which contain two numbers m and n (1 ≤ m ≤ n ≤ 1,000,000,000, n-m≤100,000) separated by a space.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For every test case, print all prime numbers p such that m ≤ p ≤ n, one number per line. Separate the answers for each test case by an empty line.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>(1 ≤ m ≤ n ≤ 1,000,000,000, n-m≤100,000)</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>2</li>
+            <li>1 10</li>
+            <li>3 5</li>
+            <li>2</li>
+            <li>3</li>
+            <li>5</li>
+            <li>7</li>
+            <li>3</li>
+            <li>5</li>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/PRIME1">Prime Generator Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/19_prime_number_generator_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/19_prime_number_generator_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/19_prime_number_generator_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/19_prime_number_generator_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day19_image_Intermediate.jpg" alt="Day 19 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 20-->
+<!--Beginner-->
+<h2>Day-20 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>Chef is watching TV. The current volume of the TV is X. Pressing the volume up button of the TV remote increases the volume by 1 while pressing the volume down button decreases the volume by 1. Chef wants to change the volume from X to Y. Find the minimum number of button presses required to do so.</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>The first line contains a single integer T - the number of test cases. Then the test cases follow.</li>
+            <li>The first and only line of each test case contains two integers X and Y - the initial volume and final volume of the TV.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For each test case, output the minimum number of times Chef has to press a button to change the volume from X to Y.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>1 ≤ T ≤ 100</li>
+            <li>1 ≤ X, Y ≤ 100</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>2</li>
+            <li>50 54</li>
+            <li>12 10</li>
+            <li>4</li>
+            <li>2</li>
+            <li>Explanation:</li>
+            <ul>
+                <li>Test Case 1: Chef can press the volume up button 4 times to increase the volume from 50 to 54.</li>
+                <li>Test Case 2: Chef can press the volume down button 2 times to decrease the volume from 12 to 10.</li>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/VOLCONTROL">Volume Control Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/20_tv_volume_change_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/20_tv_volume_change_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/20_tv_volume_change_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/20_tv_volume_change_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X, Y;
+        cin >> X >> Y;
+
+        int diff = abs(X - Y);
+        cout << diff << endl;
+    }
+
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day20_image_beginner.jpg" alt="Day 20 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+
+<!--Intermediate-->
+<h2>Day-20 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>N candidates (numbered from 1 to N) join Chef's firm. The first 5 candidates join on the first day, and then, on every subsequent day, the next 5 candidates join in.</li>
+            <li>For example, if there are 12 candidates, candidates numbered 1 to 5 will join on day 1, candidates numbered 6 to 10 on day 2, and the remaining 2 candidates will join on day 3.</li>
+            <li>Candidate numbered K decided to turn down his offer and thus, Chef adjusts the position by shifting up all the higher numbered candidates. This leads to a change in the joining day of some of the candidates.</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>First line will contain T, number of test cases. Then the test cases follow.</li>
+            <li>Each test case consists of a single line of input, two space-separated integers N and K denoting the number of candidates and the candidate who turned down the offer.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For each test case, output a single integer denoting the number of candidates whose joining day will be changed.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>1 ≤ T ≤ 1000</li>
+            <li>2 ≤ N ≤ 1000</li>
+            <li>1 ≤ K ≤ N</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>4</li>
+            <li>7 3</li>
+            <li>6 6</li>
+            <li>2 1</li>
+            <li>14 2</li>
+            <li>1</li>
+            <li>0</li>
+            <li>0</li>
+            <li>2</li>
+            <li>Explanation:</li>
+            <ul>
+                <li>Test case 1: The original joining day of each candidate is given as [1, 1, 1, 1, 1, 2, 2] but as candidate 3 turns down his offer, the new joining days are now [1, 1, NA, 1, 1, 1, 2]. Candidate numbered 6 is the only one to have his joining day changed.</li>
+                <li>Test case 2: The original joining day of each candidate is given as [1, 1, 1, 1, 1, 2] but as candidate 6 turns down his offer, the new joining days are now [1, 1, 1, 1, 1, NA]. No candidate got his joining day changed.</li>
+                <li>Test case 3: The original joining day of each candidate is given as [1, 1] but as candidate 1 turns down his offer, the new joining days are now [NA, 1]. No candidate got his joining day changed.</li>
+                <li>Test case 4: The original joining day of each candidate is given as [1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3] but as candidate 2 turns down his offer, the new joining days are now [1, NA, 1, 1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3]. Candidate numbered 6 and 11 are the only ones to have their joining days changed.</li>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/JOINING">Joining Date Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/20_joining_days_adjustment_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/20_joining_days_adjustment_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/20_joining_days_adjustment_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/20_joining_days_adjustment_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day20_image_Intermediate.jpg" alt="Day 20 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 21-->
+<!--Beginner-->
+<h2>Day-21 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>Bob has an account in the Bobby Bank. His current account balance is W rupees.</li>
+            <li>Each month, the office in which Bob works deposits a fixed amount of X rupees to his account.</li>
+            <li>Y rupees is deducted from Bob's account each month as bank charges.</li>
+            <li>Find his final account balance after Z months. Note that the account balance can be negative as well.</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>The first line will contain T, the number of test cases. Then the test cases follow.</li>
+            <li>Each test case consists of a single line of input, containing four integers W, X, Y, and Z — the initial amount, the amount deposited per month, the amount deducted per month, and the number of months.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For each test case, output in a single line the final balance in Bob's account after Z months.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>1 ≤ T ≤ 1000</li>
+            <li>1 ≤ W, X, Y, Z ≤ 10^4</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>3</li>
+            <li>100 11 1 10</li>
+            <li>999 25 36 9</li>
+            <li>2500 100 125 101</li>
+            <li>200</li>
+            <li>900</li>
+            <li>-25</li>
+            <li>Explanation:</li>
+            <ul>
+                <li>Test case 1: Bob's current account balance is 100. At the end of each month, Bob gets Rs 11 and pays Rs 1, thus gaining 10 per month. Thus, at the end of 10 months, Bob will have 100 + 10 × 10 = 200.</li>
+                <li>Test case 2: Bob's current account balance is 999. At the end of each month, Bob gets Rs 25 and pays Rs 36, thus losing 11 per month. Thus, at the end of 9 months, Bob will have 999 − 11 × 9 = 900.</li>
+                <li>Test case 3: Bob's current account balance is 2500. At the end of each month, Bob gets Rs 100 and pays Rs 125, thus losing 25 per month. Thus, at the end of 101 months, Bob will have 2500 − 25 × 101 = -25.</li>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/BOBBANK">Bob at the Bank Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/21_account_balance_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/21_account_balance_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/21_account_balance_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/21_account_balance_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while (t--) {
+        int w, x, y, z;
+        cin >> w >> x >> y >> z;
+
+        int final_balance = w + (x - y) * z;
+        cout << final_balance << endl;
+    }
+
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day21_image_beginner.jpg" alt="Day 21 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+
+<!--Intermediate-->
+<h2>Day-21 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>Janmansh is at the fruit market to buy fruits for Chingari. There is an infinite supply of three different kinds of fruits with prices A, B, and C.</li>
+            <li>He needs to buy a total of X fruits having at least 2 different kinds of fruits. What is the least amount of money he can spend to buy fruits?</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>The first line of the input contains a single integer T - the number of test cases. The description of T test cases follows.</li>
+            <li>The first and only line of each test case contains four space-separated integers X, A, B, C - the number of fruits to buy and the prices of the three different types of fruits, respectively.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For each test case, output the least amount of money he can spend to buy fruits.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>1 ≤ T ≤ 10^5</li>
+            <li>2 ≤ X ≤ 1000</li>
+            <li>1 ≤ A, B, C ≤ 100</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>2</li>
+            <li>2 1 1 1</li>
+            <li>3 4 3 2</li>
+            <li>2</li>
+            <li>7</li>
+            <li>Explanation:</li>
+            <ul>
+                <li>Test case-1: He can buy any two fruits of different kinds for a total price of 2.</li>
+                <li>Test case-2: He can buy 1 fruit of price 3 and 2 fruits of price 2 for a total price of 7.</li>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/JMARKET">Janmansh at Fruit Market Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/21_fruit_market_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/21_fruit_market_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/21_fruit_market_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/21_fruit_market_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day21_image_Intermediate.jpg" alt="Day 21 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 22-->
 <!--Day - 23-->
 <!--Day - 24-->
