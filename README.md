@@ -3540,6 +3540,220 @@ int main() {
 <br>
 
 <!--Day - 22-->
+<!--Beginner-->
+<h2>Day-22 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>There are 100 questions in a paper. Each question carries +3 marks for a correct answer, -1 marks for an incorrect answer, and 0 marks for an unattempted question.</li>
+            <li>It is given that Chef received exactly X (0 ≤ X ≤ 100) marks. Determine the minimum number of problems Chef marked incorrect.</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>First line will contain T, the number of test cases. Then the test cases follow.</li>
+            <li>Each test case consists of a single integer X, marks that Chef received.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>For each test case, output the minimum number of problems Chef marked incorrect.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>1 ≤ T ≤ 100</li>
+            <li>0 ≤ X ≤ 100</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>4</li>
+            <li>0</li>
+            <li>100</li>
+            <li>32</li>
+            <li>18</li>
+            <li>0</li>
+            <li>2</li>
+            <li>1</li>
+            <li>0</li>
+            <li>Explanation:</li>
+            <ul>
+                <li>Test Case 1: It might be possible that Chef didn't attempt any question, in which case he didn't get any question incorrect.</li>
+                <li>Test Case 2: For the case when Chef got 34 questions correct and 2 questions incorrect, Chef marked the minimum number of incorrect questions.</li>
+                <li>Test Case 3: For the case when Chef got 11 questions correct and 1 question incorrect, Chef marked the minimum number of incorrect questions.</li>
+                <li>Test Case 4: For the case when Chef got 6 questions correct and no question incorrect, Chef marked the minimum number of incorrect questions.</li>
+            </ul>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/ACCURACY">High Accuracy Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/22_minimum_incorrect_problems_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/22_minimum_incorrect_problems_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/22_minimum_incorrect_problems_beginner.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/22_minimum_incorrect_problems_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int X;
+        cin >> X;
+        int incorrect = 0;
+
+        if (X % 3 == 0) {
+            incorrect = 0;
+        } else if (X % 3 == 1) {
+            incorrect = 2;
+        } else {
+            incorrect = 1;
+        }
+
+        cout << incorrect << endl;
+    }
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day22_image_beginner.jpg" alt="Day 22 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+
+<!--Intermediate-->
+<h2>Day-22 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+    <ul>
+        <li>Problem</li>
+        <ul>
+            <li>Write a program to obtain 2 numbers (A and B) and an arithmetic operator (C) and then design a calculator depending upon the operator entered by the user.</li>
+            <li>For example, if C = "+", you have to sum the two numbers.</li>
+            <li>If C = "-", you have to subtract the two numbers.</li>
+            <li>If C = "*", you have to print the product.</li>
+            <li>If C = "/", you have to divide the two numbers.</li>
+        </ul>
+        <li>Input Format</li>
+        <ul>
+            <li>First line will contain the first number A.</li>
+            <li>Second line will contain the second number B.</li>
+            <li>Third line will contain the operator C, that is to be performed on A and B.</li>
+        </ul>
+        <li>Output Format</li>
+        <ul>
+            <li>Output a single line containing the answer obtained by performing the operator on the numbers.</li>
+            <li>Your output will be considered correct if the difference between your output and the actual answer is not more than 10^-6.</li>
+        </ul>
+        <li>Constraints</li>
+        <ul>
+            <li>-1000 ≤ A ≤ 1000</li>
+            <li>-1000 ≤ B ≤ 1000</li>
+            <li>B ≠ 0</li>
+            <li>C can only be one of these 4 operators: {"+", "-", "*", "/"}</li>
+        </ul>
+        <li>Sample 1:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>8</li>
+            <li>2</li>
+            <li>/</li>
+            <li>4.0</li>
+        </ul>
+        <li>Sample 2:</li>
+        <ul>
+            <li>Input</li>
+            <li>Output</li>
+            <li>5</li>
+            <li>3</li>
+            <li>+</li>
+            <li>8</li>
+        </ul>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/URCALC">Program Your Own CALCULATOR Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/22_simple_calculator_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/22_simple_calculator_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/22_simple_calculator_Intermediate.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/22_simple_calculator_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    double A, B, result;
+    
+    char opr;
+
+    cin >> A;
+    cin >> B;
+    cin >> opr;
+
+    switch (opr) {
+        case '+':
+            result = A + B;
+            break;
+        case '-':
+            result = A - B;
+            break;
+        case '*':
+            result = A * B;
+            break;
+        case '/':
+            if (B == 0) {
+                cout << "Undefined" << endl;
+                return 0;
+            }
+            result = A / B;
+            break;
+        default:
+            cout << "Invalid operator" << endl;
+            return 0;
+    }
+
+    cout << fixed << result << endl;
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day22_image_Intermediate.jpg" alt="Day 22 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 23-->
 <!--Day - 24-->
 <!--Day - 25-->
