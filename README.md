@@ -58,6 +58,12 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 | [Day - 20 - Intermediate](#day-20---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 |     [Day - 21 - Beginner](#day-21---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
 | [Day - 21 - Intermediate](#day-21---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 22 - Beginner](#day-22---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 22 - Intermediate](#day-22---intermediate) | ✅  |   ❌   |     ❌     |   ❌   |
+|     [Day - 23 - Beginner](#day-23---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 23 - Intermediate](#day-23---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
+|     [Day - 24 - Beginner](#day-24---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
+| [Day - 24 - Intermediate](#day-24---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 
 <br>
 
@@ -3110,25 +3116,25 @@ int digitSum(int n) {
 int main() {
     int T;
     cin >> T;
-    
+
     while (T--) {
         int N;
         cin >> N;
-        
+
         int X = N + 1;
         while (true) {
             int sum_N = digitSum(N);
             int sum_X = digitSum(X);
-            
+
             if (sum_N % 2 != sum_X % 2) {
                 cout << X << endl;
                 break;
             }
-            
+
             X++;
         }
     }
-    
+
     return 0;
 }
 ```
@@ -3299,7 +3305,6 @@ int main() {
 
 <br>
 
-
 <!--Intermediate-->
 <h2>Day-20 - Intermediate</h2>
 <details>
@@ -3468,7 +3473,6 @@ int main() {
 
 <br>
 
-
 <!--Intermediate-->
 <h2>Day-21 - Intermediate</h2>
 <details>
@@ -3594,9 +3598,9 @@ int main() {
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/22_minimum_incorrect_problems_beginner.cpp"><code>C++</code></a></li>
-<li><a href="Python/22_minimum_incorrect_problems_beginner.py"><code>Python</code></a></li>
-<li><a href="JavaScript/22_minimum_incorrect_problems_beginner.js"><code>JavaScript</code></a></li>
-<li><a href="Golang/22_minimum_incorrect_problems_beginner.go"><code>Golang</code></a></li>
+<li><a href="Python/22_minimum_incorrect_problems_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/22_minimum_incorrect_problems_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/22_minimum_incorrect_problems_beginner.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Cpp</code> programming language:</p>
 
 ```cpp
@@ -3637,7 +3641,6 @@ int main() {
 ---
 
 <br>
-
 
 <!--Intermediate-->
 <h2>Day-22 - Intermediate</h2>
@@ -3697,9 +3700,9 @@ int main() {
 
 <h2>Solution/Codes</h2>
 <li><a href="C++/22_simple_calculator_Intermediate.cpp"><code>C++</code></a></li>
-<li><a href="Python/22_simple_calculator_Intermediate.py"><code>Python</code></a></li>
-<li><a href="JavaScript/22_simple_calculator_Intermediate.js"><code>JavaScript</code></a></li>
-<li><a href="Golang/22_simple_calculator_Intermediate.go"><code>Golang</code></a></li>
+<li><a href="Python/22_simple_calculator_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/22_simple_calculator_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/22_simple_calculator_Intermediate.go"><code>❌ Golang</code></a></li>
 <p>Here's an example of using the <code>Cpp</code> programming language:</p>
 
 ```cpp
@@ -3708,7 +3711,7 @@ using namespace std;
 
 int main() {
     double A, B, result;
-    
+
     char opr;
 
     cin >> A;
@@ -3755,7 +3758,335 @@ int main() {
 <br>
 
 <!--Day - 23-->
+<!--Beginner-->
+<h2>Day-23 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Alice, Bob, and Charlie want to buy a Netflix subscription. However, Netflix allows only two users to share a subscription. Given that Alice, Bob, and Charlie have specific amounts of money and the cost of a Netflix subscription, determine if any two of them can contribute to buy a subscription.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line of input contains an integer T, the number of test cases. Each test case consists of four space-separated integers: A, B, C, and X — the amounts Alice, Bob, and Charlie have, and the cost of a Netflix subscription, respectively.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output "YES" if any two of them can contribute to buy a Netflix subscription, or "NO" otherwise. You may print the result in either uppercase or lowercase.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 1000</li>
+      <li>1 ≤ A, B, C, X ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    4
+    1 1 1 3
+    2 3 1 5
+    4 2 3 4
+    2 1 4 7
+    </pre>
+    <p>Output</p>
+    <pre>
+    NO
+    YES
+    YES
+    NO
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/NETFLIX">Netflix Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/23_netflix_subscription_sharing_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/23_netflix_subscription_sharing_beginner.py"><code>Python</code></a></li>
+<li><a href="JavaScript/23_netflix_subscription_sharing_beginner.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/23_netflix_subscription_sharing_beginner.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int A, B, C, X;
+        cin >> A >> B >> C >> X;
+
+        if ((A + B >= X) || (A + C >= X) || (B + C >= X)) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
+        }
+    }
+
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day23_image_beginner.jpg" alt="Day 23 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+<!--Intermediate-->
+<h2>Day-23 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+<ul>
+  <li><strong>Problem:</strong> Chef wants to estimate the skill level of participants in a coding competition. Each participant can be classified based on the number of problems they solved as follows:
+    <ul>
+      <li>0 problems: Beginner</li>
+      <li>1 problem: Junior Developer</li>
+      <li>2 problems: Middle Developer</li>
+      <li>3 problems: Senior Developer</li>
+      <li>4 problems: Hacker</li>
+      <li>5 problems: Jeff Dean</li>
+    </ul>
+    Help Chef identify the programming level of each participant based on their problem-solving results.
+  </li>
+  <li><strong>Input:</strong>
+    <ul>
+      <li>The first line of the input contains a single integer N denoting the number of competitors.</li>
+      <li>N lines follow. The i-th of these lines contains five space-separated integers Ai, 1, Ai, 2, Ai, 3, Ai, 4, Ai, 5. The j-th of these integers (1 ≤ j ≤ 5) is 1 if the i-th contestant solved the j-th problem and 0 otherwise.</li>
+    </ul>
+  </li>
+  <li><strong>Output:</strong> For each participant, print a single line containing one string denoting Chef's classification of that contestant — one of the strings "Beginner," "Junior Developer," "Middle Developer," "Senior Developer," "Hacker," "Jeff Dean" (without quotes).</li>
+  <li><strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ N ≤ 5000</li>
+      <li>0 ≤ Ai, j ≤ 1 for each valid i, j</li>
+    </ul>
+  </li>
+  <li><strong>Sample 1:</strong>
+    <pre>
+    Input
+    7
+    0 0 0 0 0
+    0 1 0 1 0
+    0 0 1 0 0
+    1 1 1 1 1
+    0 1 1 1 0
+    0 1 1 1 1
+    1 1 1 1 0
+    </pre>
+    <p>Output</p>
+    <pre>
+    Beginner
+    Middle Developer
+    Junior Developer
+    Jeff Dean
+    Senior Developer
+    Hacker
+    Hacker
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CCOOK">Chef and Cook-Off Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/23_contestant_skill_classification_Intermediate.cpp"><code>❌ C++</code></a></li>
+<li><a href="Python/23_contestant_skill_classification_Intermediate.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/23_contestant_skill_classification_Intermediate.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/23_contestant_skill_classification_Intermediate.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day23_image_Intermediate.jpg" alt="Day 23 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 24-->
+<!--Beginner-->
+<h2>Day-24 - Beginner</h2>
+<details>
+<summary>Today's Beginner problem:</summary>
+<div>
+<ul>
+  <li>
+    <strong>Problem:</strong> Chef wants to gift C chocolates to Botswal on his birthday. However, he has only X chocolates with him. The cost of 1 chocolate is Y rupees. Find the minimum money in rupees Chef needs to spend so that he can gift C chocolates to Botswal.
+  </li>
+  <li>
+    <strong>Input Format:</strong> The first line will contain T, the number of test cases. Then the test cases follow. Each test case consists of a single line of input, three integers: C, X, and Y.
+  </li>
+  <li>
+    <strong>Output Format:</strong> For each test case, output in a single line the answer, the minimum money in rupees Chef needs to spend.
+  </li>
+  <li>
+    <strong>Constraints:</strong>
+    <ul>
+      <li>1 ≤ T ≤ 100</li>
+      <li>1 ≤ C ≤ 100</li>
+      <li>0 ≤ X ≤ C</li>
+      <li>1 ≤ Y ≤ 100</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Sample 1:</strong>
+    <pre>
+    Input
+    2
+    7 5 5
+    10 1 1
+    </pre>
+    <p>Output</p>
+    <pre>
+    10
+    9
+    </pre>
+  </li>
+</ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/CHEFCHOCO">Chef and Chocolates Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/24_chocolates_beginner.cpp"><code>C++</code></a></li>
+<li><a href="Python/24_chocolates_beginner.py"><code>❌ Python</code></a></li>
+<li><a href="JavaScript/24_chocolates_beginner.js"><code>❌ JavaScript</code></a></li>
+<li><a href="Golang/24_chocolates_beginner.go"><code>❌ Golang</code></a></li>
+<p>Here's an example of using the <code>Cpp</code> programming language:</p>
+
+```cpp
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int C, X, Y;
+        cin >> C >> X >> Y;
+
+        int money_spent = 0;
+
+        if (X >= C) {
+            money_spent = 0;
+        } else {
+            int chocolates_needed = C - X;
+            money_spent = chocolates_needed * Y;
+        }
+
+        cout << money_spent << endl;
+    }
+
+    return 0;
+}
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day24_image_beginner.jpg" alt="Day 24 Image Beginner">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
+
+<!--Intermediate-->
+<h2>Day-24 - Intermediate</h2>
+<details>
+<summary>Today's Intermediate problem:</summary>
+<div>
+    <ul>
+        <li>
+            <strong>Problem:</strong> Chef has a number X whose value is initially 0. In one move, he can either increment X by 2 (X := X + 2) or decrement X by 1 (X := X - 1). Chef can perform at most Y moves. Find the number of distinct values X can have after performing at most Y moves.
+        </li>
+        <li>
+            <strong>Input Format:</strong> The first line of input contains a single integer T, denoting the number of test cases. The first and only line of each test case contains an integer Y, the maximum number of moves Chef can perform.
+        </li>
+        <li>
+            <strong>Output Format:</strong> For each test case, output the number of distinct values X can have after performing at most Y moves.
+        </li>
+        <li>
+            <strong>Constraints:</strong>
+            <ul>
+                <li>1 ≤ T ≤ 1000</li>
+                <li>0 ≤ Y ≤ 10^6</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Sample 1:</strong>
+            <pre>
+            Input
+            3
+            0
+            1
+            2
+            </pre>
+            <p>Output</p>
+            <pre>
+            1
+            3
+            6
+            </pre>
+        </li>
+    </ul>
+</div>
+<p>For more details, You can find the full problem description on CodeChef's website:
+<a href="https://www.codechef.com/problems/PLUS2MINUS1">Plus 2 or Minus 1 Problem Description</a>.</p>
+</details>
+
+<h2>Solution/Codes</h2>
+<li><a href="C++/24_chef_moves_and_distinct_values_Intermediate.cpp"><code>C++</code></a></li>
+<li><a href="Python/24_chef_moves_and_distinct_values_Intermediate.py"><code>Python</code></a></li>
+<li><a href="JavaScript/24_chef_moves_and_distinct_values_Intermediate.js"><code>JavaScript</code></a></li>
+<li><a href="Golang/24_chef_moves_and_distinct_values_Intermediate.go"><code>Golang</code></a></li>
+<p>Here's an example of using the <code>Python</code> programming language:</p>
+
+```python
+    // Your_code_here
+```
+
+<details>
+<summary>Images</summary>
+<img src="assets/day24_image_Intermediate.jpg" alt="Day 24 Image Intermediate">
+</details>
+<br>
+
+[🔝 Back to Table](#progress-table)
+
+---
+
+<br>
+
 <!--Day - 25-->
 <!--Day - 26-->
 <!--Day - 27-->
