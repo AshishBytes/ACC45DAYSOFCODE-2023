@@ -65,6 +65,7 @@ Please take a quick look at the [contribution guidelines](/CONTRIBUTING.md) firs
 |     [Day - 24 - Beginner](#day-24---beginner)     | ✅  |   ❌   |     ❌     |   ❌   |
 | [Day - 24 - Intermediate](#day-24---intermediate) | ❌  |   ❌   |     ❌     |   ❌   |
 
+After that, I will not update the readme file; I will just upload the programs to the C++ folder.
 <br>
 
 ---
@@ -4018,7 +4019,6 @@ int main() {
 ---
 
 <br>
-
 
 <!--Intermediate-->
 <h2>Day-24 - Intermediate</h2>
