@@ -1,0 +1,26 @@
+// https://www.codechef.com/problems/MINCOINS
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+    
+    while (T--) {
+        int X;
+        cin >> X;
+        
+        if (X % 5 == 0) {
+            int fives = X / 5;
+            int tens = fives / 2;
+            fives %= 2;
+            int total_coins = fives + tens;
+            cout << total_coins << endl;
+        } else {
+            cout << "-1" << endl;
+        }
+    }
+    
+    return 0;
+}
